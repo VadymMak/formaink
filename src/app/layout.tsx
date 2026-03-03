@@ -1,32 +1,38 @@
-import type { Viewport } from 'next';
-import { Inter, Playfair_Display, Space_Grotesk } from 'next/font/google';
-import './globals.css';
+import type { Viewport, Metadata } from "next";
+import { Inter, Playfair_Display, Space_Grotesk } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '500', '600'],
-  variable: '--font-body',
-  display: 'swap',
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600"],
+  variable: "--font-body",
+  display: "swap",
 });
 
 const playfairDisplay = Playfair_Display({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['400', '600', '700', '900'],
-  variable: '--font-heading',
-  display: 'swap',
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "600", "700", "900"],
+  variable: "--font-heading",
+  display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
-  variable: '--font-display',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
 });
 
 export const viewport: Viewport = {
-  themeColor: '#F5F0E8',
-  width: 'device-width',
+  themeColor: "#F5F0E8",
+  width: "device-width",
   initialScale: 1,
+};
+
+export const metadata: Metadata = {
+  other: {
+    google: "notranslate",
+  },
 };
 
 export default function RootLayout({
@@ -37,7 +43,8 @@ export default function RootLayout({
   return (
     <html
       suppressHydrationWarning
-      className={`${inter.variable} ${playfairDisplay.variable} ${spaceGrotesk.variable}`}
+      className={`notranslate ${inter.variable} ${playfairDisplay.variable} ${spaceGrotesk.variable}`}
+      translate="no"
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
