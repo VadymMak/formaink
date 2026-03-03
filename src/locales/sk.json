@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "FormaInk — Dizajn a tlač pre váš biznis",
+    "description": "Profesionálna dizajnová štúdia v Trenčíne. Logotypy, vizitky, menu, branding pre reštaurácie a malý podnik."
+  },
+  "nav": {
+    "home": "Domov",
+    "portfolio": "Portfólio",
+    "services": "Služby",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "order": "Objednávka"
+  },
+  "common": {
+    "viewAll": "Zobraziť všetko",
+    "orderDesign": "Objednať dizajn",
+    "contactUs": "Kontaktujte nás",
+    "readMore": "Čítať viac",
+    "backToHome": "Späť na domov",
+    "comingSoon": "Už čoskoro"
+  },
+  "hero": {
+    "title": "FormaInk",
+    "subtitle": "Branding • Polygrafie • Dizajn pre reštaurácie",
+    "cta": "Pozrieť portfólio",
+    "ctaSecondary": "Objednať dizajn"
+  },
+  "services": {
+    "title": "Čo pre vás urobíme",
+    "brandIdentity": "Firemná identita",
+    "brandIdentityDesc": "Logotypy, brandbook, farebné systémy a vizuálny štýl vašej značky",
+    "print": "Tlač a polygrafie",
+    "printDesc": "Vizitky, kalendáre, plagáty, letáky, tričká — dizajn + tlač cez typografiu",
+    "restaurant": "Balík pre reštaurácie",
+    "restaurantDesc": "Menu, vizitky, sezónne aktualizácie, nápojové lístky, etikety",
+    "smm": "Sociálne siete",
+    "smmDesc": "Vedenie Instagramu, obsahový plán, fotografie pre reštaurácie"
+  },
+  "portfolio": {
+    "title": "Naše projekty",
+    "viewCase": "Pozrieť projekt"
+  },
+  "clients": {
+    "title": "Naši klienti"
+  },
+  "about": {
+    "title": "O štúdiu",
+    "text": "Dizajnová štúdia založená Anastasiou Kolesnik. Personálny prístup ku každému projektu. Pracujete priamo s dizajnérkou, bez sprostredkovateľov.",
+    "partners": "Naši partneri"
+  },
+  "testimonials": {
+    "title": "Čo hovoria klienti"
+  },
+  "cta": {
+    "title": "Pripravení na nový projekt?",
+    "subtitle": "Napíšte nám a prediskutujeme váš dizajn",
+    "button": "Kontaktujte nás"
+  },
+  "footer": {
+    "tagline": "Dizajn a tlač pre váš biznis",
+    "portfolio": "Portfólio",
+    "services": "Služby",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "copyright": "© {year} FormaInk. Všetky práva vyhradené.",
+    "location": "Trenčín, Slovensko",
+    "privacy": "Ochrana súkromia"
+  },
+  "pages": {
+    "portfolio": {
+      "metaTitle": "Portfólio | FormaInk",
+      "metaDesc": "Naše najlepšie projekty — Adriano, Star Food, UB Market",
+      "title": "Portfólio",
+      "subtitle": "Vybrané projekty a prípadové štúdie"
+    },
+    "contact": {
+      "metaTitle": "Kontakt | FormaInk",
+      "metaDesc": "Kontaktujte nás pre dizajn a tlač",
+      "title": "Kontaktujte nás",
+      "subtitle": "Pripravení začať nový projekt? Napíšte nám cez formulár alebo priamo.",
+      "formPlaceholder": "Kontaktný formulár — čoskoro"
+    },
+    "blog": {
+      "metaTitle": "Blog | FormaInk",
+      "metaDesc": "Články o dizajne, brandingu a podnikaní",
+      "title": "Blog",
+      "subtitle": "Články o dizajne, brandingu a tlači",
+      "comingSoon": "Články sa pripravujú..."
+    },
+    "servicesDesign": {
+      "metaTitle": "Firemná identita | FormaInk",
+      "metaDesc": "Logotypy, brandbook, vizuálny štýl pre váš biznis",
+      "breadcrumb": "Firemná identita",
+      "title": "Firemná identita",
+      "description": "Vytvoríme vizuálnu identitu, ktorá vyjadrí podstatu vášho biznisu. Od logotypu po kompletný brandbook.",
+      "logo": "Logotyp",
+      "logoDesc": "Unikátny logotyp navrhnutý pre vašu značku",
+      "brandbook": "Brandbook",
+      "brandbookDesc": "Kompletný manuál vizuálnej identity",
+      "identity": "Vizuálny štýl",
+      "identityDesc": "Farebné schémy, typografia, vzory",
+      "cta": "Objednať dizajn"
+    },
+    "servicesPrint": {
+      "metaTitle": "Tlač a polygrafie | FormaInk",
+      "metaDesc": "Vizitky, kalendáre, plagáty, letáky — dizajn a tlač",
+      "breadcrumb": "Tlač a polygrafie",
+      "title": "Tlač a polygrafie",
+      "description": "Dizajn + profesionálna tlač cez typografiu. Vizitky, plagáty, kalendáre, tričká a viac.",
+      "cards": "Vizitky",
+      "cardsDesc": "Štandardné, perleťové, špeciálne papiere",
+      "posters": "Plagáty a letáky",
+      "postersDesc": "A5, A4, A3 formáty — rôzne papiere",
+      "merch": "Merch a tričká",
+      "merchDesc": "Potlač tričiek, tašiek, doplnkov",
+      "cta": "Objednať tlač"
+    },
+    "servicesRestaurant": {
+      "metaTitle": "Balík pre reštaurácie | FormaInk",
+      "metaDesc": "Kompletný dizajnový balík pre reštaurácie — menu, vizitky, etikety",
+      "breadcrumb": "Balík pre reštaurácie",
+      "title": "Balík pre reštaurácie",
+      "description": "Kompletný vizuálny balík pre reštaurácie: menu, vizitky, nápojové lístky, sezónne materiály.",
+      "menu": "Dizajn menu",
+      "menuDesc": "Jedálny a nápojový lístok v štýle vášho podniku",
+      "seasonal": "Sezónne aktualizácie",
+      "seasonalDesc": "Zmeny menu, sviatočné materiály, špeciálne ponuky",
+      "package": "Ročný balík",
+      "packageDesc": "Všetko v jednom za zvýhodnenú cenu — štvrťročná fakturácia",
+      "cta": "Objednať balík"
+    },
+    "servicesSmm": {
+      "metaTitle": "Sociálne siete | FormaInk",
+      "metaDesc": "Vedenie Instagramu a sociálnych sietí pre reštaurácie",
+      "breadcrumb": "Sociálne siete",
+      "title": "Sociálne siete",
+      "description": "Profesionálne vedenie Instagramu a sociálnych sietí pre reštaurácie a gastro podniky.",
+      "content": "Obsahový plán",
+      "contentDesc": "Mesačný plán postov, stories, reels",
+      "photo": "Fotografia",
+      "photoDesc": "Profesionálne fotky jedál a interiéru",
+      "management": "Správa profilu",
+      "managementDesc": "Pravidelné postovanie, odpovede, engagement",
+      "cta": "Objednať správu"
+    }
+  },
+  "contactForm": {
+    "name": "Meno",
+    "namePlaceholder": "Vaše meno",
+    "emailPlaceholder": "vas@email.com",
+    "projectType": "Typ projektu",
+    "typeBrand": "Firemná identita",
+    "typePrint": "Tlač a polygrafie",
+    "typeRestaurant": "Balík pre reštaurácie",
+    "typeSmm": "Sociálne siete",
+    "typeOther": "Iné",
+    "message": "Správa",
+    "messagePlaceholder": "Opíšte váš projekt...",
+    "send": "Odoslať",
+    "sending": "Odosielam...",
+    "errorName": "Zadajte meno (min. 2 znaky)",
+    "errorEmail": "Zadajte platný email",
+    "errorMessage": "Správa musí mať aspoň 10 znakov",
+    "errorGeneral": "Niečo sa pokazilo. Skúste znova.",
+    "successTitle": "Správa odoslaná!",
+    "successText": "Odpovieme vám do 24 hodín.",
+    "sendAnother": "Odoslať ďalšiu správu"
+  }
+}

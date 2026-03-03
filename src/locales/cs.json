@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "FormaInk — Design a tisk pro váš byznys",
+    "description": "Profesionální designové studio v Trenčíně. Loga, vizitky, menu, branding pro restaurace a malé podniky."
+  },
+  "nav": {
+    "home": "Domů",
+    "portfolio": "Portfolio",
+    "services": "Služby",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "order": "Objednávka"
+  },
+  "common": {
+    "viewAll": "Zobrazit vše",
+    "orderDesign": "Objednat design",
+    "contactUs": "Kontaktujte nás",
+    "readMore": "Číst dál",
+    "backToHome": "Zpět na úvod",
+    "comingSoon": "Již brzy"
+  },
+  "hero": {
+    "title": "FormaInk",
+    "subtitle": "Branding • Polygrafie • Design pro restaurace",
+    "cta": "Zobrazit portfolio",
+    "ctaSecondary": "Objednat design"
+  },
+  "services": {
+    "title": "Co pro vás uděláme",
+    "brandIdentity": "Firemní identita",
+    "brandIdentityDesc": "Loga, brandbook, barevné systémy a vizuální styl vaší značky",
+    "print": "Tisk a polygrafie",
+    "printDesc": "Vizitky, kalendáře, plakáty, letáky, trička — design + tisk přes tiskárnu",
+    "restaurant": "Balíček pro restaurace",
+    "restaurantDesc": "Menu, vizitky, sezónní aktualizace, nápojové lístky, etikety",
+    "smm": "Sociální sítě",
+    "smmDesc": "Vedení Instagramu, obsahový plán, fotografie pro restaurace"
+  },
+  "portfolio": {
+    "title": "Naše projekty",
+    "viewCase": "Zobrazit projekt"
+  },
+  "clients": {
+    "title": "Naši klienti"
+  },
+  "about": {
+    "title": "O studiu",
+    "text": "Designové studio založené Anastasiou Kolesnik. Personální přístup ke každému projektu. Pracujete přímo s designérkou, bez prostředníků.",
+    "partners": "Naši partneři"
+  },
+  "testimonials": {
+    "title": "Co říkají klienti"
+  },
+  "cta": {
+    "title": "Připraveni na nový projekt?",
+    "subtitle": "Napište nám a probereme váš design",
+    "button": "Kontaktujte nás"
+  },
+  "footer": {
+    "tagline": "Design a tisk pro váš byznys",
+    "portfolio": "Portfolio",
+    "services": "Služby",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "copyright": "© {year} FormaInk. Všechna práva vyhrazena.",
+    "location": "Trenčín, Slovensko",
+    "privacy": "Ochrana soukromí"
+  },
+  "pages": {
+    "portfolio": {
+      "metaTitle": "Portfolio | FormaInk",
+      "metaDesc": "Naše nejlepší projekty — Adriano, Star Food, UB Market",
+      "title": "Portfolio",
+      "subtitle": "Vybrané projekty a případové studie"
+    },
+    "contact": {
+      "metaTitle": "Kontakt | FormaInk",
+      "metaDesc": "Kontaktujte nás pro design a tisk",
+      "title": "Kontaktujte nás",
+      "subtitle": "Připraveni na nový projekt? Napište nám.",
+      "formPlaceholder": "Kontaktní formulář — již brzy"
+    },
+    "blog": {
+      "metaTitle": "Blog | FormaInk",
+      "metaDesc": "Články o designu, brandingu a podnikání",
+      "title": "Blog",
+      "subtitle": "Články o designu, brandingu a tisku",
+      "comingSoon": "Články se připravují..."
+    },
+    "servicesDesign": {
+      "metaTitle": "Firemní identita | FormaInk",
+      "metaDesc": "Loga, brandbook, vizuální styl",
+      "breadcrumb": "Firemní identita",
+      "title": "Firemní identita",
+      "description": "Vizuální identita, která vyjádří podstatu vašeho byznysu.",
+      "logo": "Logo",
+      "logoDesc": "Unikátní logo pro vaši značku",
+      "brandbook": "Brandbook",
+      "brandbookDesc": "Kompletní manuál vizuální identity",
+      "identity": "Vizuální styl",
+      "identityDesc": "Barevná schémata, typografie, vzory",
+      "cta": "Objednat design"
+    },
+    "servicesPrint": {
+      "metaTitle": "Tisk a polygrafie | FormaInk",
+      "metaDesc": "Vizitky, kalendáře, plakáty — design a tisk",
+      "breadcrumb": "Tisk",
+      "title": "Tisk a polygrafie",
+      "description": "Design + profesionální tisk přes tiskárnu.",
+      "cards": "Vizitky",
+      "cardsDesc": "Standardní, perleťové, speciální papíry",
+      "posters": "Plakáty a letáky",
+      "postersDesc": "Formáty A5, A4, A3",
+      "merch": "Merch a trička",
+      "merchDesc": "Potisk triček, tašek, doplňků",
+      "cta": "Objednat tisk"
+    },
+    "servicesRestaurant": {
+      "metaTitle": "Balíček pro restaurace | FormaInk",
+      "metaDesc": "Kompletní designový balíček pro restaurace",
+      "breadcrumb": "Restaurace",
+      "title": "Balíček pro restaurace",
+      "description": "Kompletní vizuální balíček: menu, vizitky, nápojové lístky.",
+      "menu": "Design menu",
+      "menuDesc": "Jídelní a nápojový lístek ve stylu podniku",
+      "seasonal": "Sezónní aktualizace",
+      "seasonalDesc": "Změny menu, sváteční materiály",
+      "package": "Roční balíček",
+      "packageDesc": "Vše v jednom — čtvrtletní fakturace",
+      "cta": "Objednat balíček"
+    },
+    "servicesSmm": {
+      "metaTitle": "Sociální sítě | FormaInk",
+      "metaDesc": "Vedení Instagramu pro restaurace",
+      "breadcrumb": "Sociální sítě",
+      "title": "Sociální sítě",
+      "description": "Profesionální vedení Instagramu pro restaurace.",
+      "content": "Obsahový plán",
+      "contentDesc": "Měsíční plán postů, stories, reels",
+      "photo": "Fotografie",
+      "photoDesc": "Profesionální fotky jídel a interiéru",
+      "management": "Správa profilu",
+      "managementDesc": "Pravidelné postování, odpovědi",
+      "cta": "Objednat správu"
+    }
+  },
+  "contactForm": {
+    "name": "Jméno",
+    "namePlaceholder": "Vaše jméno",
+    "emailPlaceholder": "vas@email.com",
+    "projectType": "Typ projektu",
+    "typeBrand": "Firemní identita",
+    "typePrint": "Tisk a polygrafie",
+    "typeRestaurant": "Balíček pro restaurace",
+    "typeSmm": "Sociální sítě",
+    "typeOther": "Jiné",
+    "message": "Zpráva",
+    "messagePlaceholder": "Popište váš projekt...",
+    "send": "Odeslat",
+    "sending": "Odesílám...",
+    "errorName": "Zadejte jméno (min. 2 znaky)",
+    "errorEmail": "Zadejte platný email",
+    "errorMessage": "Zpráva musí mít alespoň 10 znaků",
+    "errorGeneral": "Něco se pokazilo. Zkuste to znovu.",
+    "successTitle": "Zpráva odeslána!",
+    "successText": "Odpovíme vám do 24 hodin.",
+    "sendAnother": "Odeslat další zprávu"
+  }
+}

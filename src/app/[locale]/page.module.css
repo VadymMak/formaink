@@ -1,0 +1,405 @@
+/* ============================================
+   HOME PAGE — Nadia Kolomiets magazine style
+   ============================================ */
+
+/* ====== Hero ====== */
+.hero {
+  padding: var(--section-gap) 0 60px;
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: var(--font-size-hero);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.heroSubtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.heroVisual {
+  display: flex;
+  justify-content: center;
+}
+
+/* ====== Buttons ====== */
+.btnPrimary {
+  display: inline-block;
+  padding: 14px 32px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-on-contrast);
+  background: var(--bg-contrast);
+  border-radius: 4px;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.btnPrimary:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.btnSecondary {
+  display: inline-block;
+  padding: 14px 32px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-primary);
+  background: transparent;
+  border: 1.5px solid var(--divider);
+  border-radius: 4px;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btnSecondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ====== Placeholder (for images) ====== */
+.placeholder {
+  background: var(--bg-card);
+  border-radius: var(--card-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  width: 100%;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* ====== Section Title ====== */
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+}
+
+/* ====== Services ====== */
+.services {
+  padding: var(--section-gap) 0;
+  background: var(--bg-secondary);
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px;
+  background: var(--bg-primary);
+  border: 1px solid var(--divider);
+  border-radius: var(--card-radius);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+  position: relative;
+}
+
+.serviceCard:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.serviceCardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.serviceCardDesc {
+  font-size: var(--font-size-body);
+  color: var(--text-secondary);
+  line-height: var(--body-line-height);
+}
+
+.arrow {
+  font-size: 1.25rem;
+  color: var(--accent);
+  transition: transform var(--transition-fast);
+}
+
+.serviceCard:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* ====== Portfolio / Case Studies ====== */
+.portfolioSection {
+  padding: var(--section-gap) 0;
+}
+
+.caseStudy {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.caseText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.caseTitle {
+  font-family: var(--font-display);
+  font-size: var(--font-size-case-title);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.caseCategory {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.caseDesc {
+  font-size: var(--font-size-body);
+  color: var(--text-secondary);
+  line-height: var(--body-line-height);
+  max-width: 420px;
+}
+
+.palette {
+  display: flex;
+  gap: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+}
+
+.caseLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 8px;
+  transition: color var(--transition-fast);
+}
+
+.caseLink:hover {
+  color: var(--accent-hover);
+}
+
+.caseGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-content: start;
+}
+
+.caseDivider {
+  height: 2px;
+  background: var(--divider-accent);
+}
+
+/* ====== Clients (Dark section) ====== */
+.clientLogos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.clientLogo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-on-contrast);
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+}
+
+/* ====== About ====== */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.partners {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.partnersLabel {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.partnerList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.partnerName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border: 1px solid var(--divider);
+  border-radius: 4px;
+}
+
+.aboutPhoto {
+  display: flex;
+  justify-content: center;
+}
+
+/* ====== Testimonials ====== */
+.testimonials {
+  padding: var(--section-gap) 0;
+  background: var(--bg-secondary);
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.quote {
+  padding: 32px;
+  background: var(--bg-primary);
+  border-radius: var(--card-radius);
+  border-left: 3px solid var(--accent);
+}
+
+.quote p {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.quote cite {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* ====== CTA Section ====== */
+.ctaSection {
+  padding: var(--section-gap) 0;
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.ctaSubtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .heroCtas {
+    justify-content: center;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .caseStudy {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .clientLogos {
+    gap: 32px;
+  }
+}

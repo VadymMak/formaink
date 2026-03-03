@@ -1,0 +1,254 @@
+/* ============================================
+   RESET
+   ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   DAY MODE (default) — Nadia style warm kraft
+   ============================================ */
+:root,
+[data-theme="day"] {
+  /* Backgrounds */
+  --bg-primary: #ebe3d5; /* Тёплый крафт — как у Nadia */
+  --bg-secondary: #e3dbcd; /* Чуть темнее для секций */
+  --bg-card: #ddd5c7; /* Карточки */
+  --bg-hover: #d5cdbf; /* Hover */
+  --bg-contrast: #4a4540;
+
+  /* Text */
+  --text-primary: #2d2a26;
+  --text-secondary: #5c5650;
+  --text-muted: #8a837b;
+  --text-on-contrast: #f5f0e8;
+
+  /* Accent */
+  --accent: #8b3a2a;
+  --accent-hover: #a04432;
+
+  /* Borders & Dividers */
+  --divider: #d4cec4;
+  --divider-accent: #8b3a2a;
+
+  /* Spacing */
+  --section-gap: clamp(80px, 10vw, 120px);
+  --container-max: 1200px;
+  --container-padding: clamp(16px, 4vw, 40px);
+  --card-radius: 8px;
+
+  /* Typography */
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-size-hero: clamp(3rem, 8vw, 7.5rem);
+  --font-size-case-title: clamp(2rem, 4vw, 3.5rem);
+  --font-size-h2: clamp(1.8rem, 3vw, 2.5rem);
+  --font-size-body: clamp(1rem, 1.1vw, 1.125rem);
+  --body-line-height: 1.75;
+
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-medium: 400ms ease;
+  --transition-theme: 300ms ease;
+}
+
+/* ============================================
+   NIGHT MODE — Gallery/premium dark
+   ============================================ */
+[data-theme="night"] {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #262626;
+  --bg-card: #2d2d2d;
+  --bg-hover: #363636;
+  --bg-contrast: #2a2725; /* Тёмный, чуть теплее основного фона */
+
+  --text-primary: #f0ebe3;
+  --text-secondary: #b0a89e;
+  --text-muted: #787068;
+  --text-on-contrast: #f0ebe3; /* Светлый текст на тёмном */
+
+  --accent: #c45a3c;
+  --accent-hover: #d4684a;
+
+  --divider: #3a3a3a;
+  --divider-accent: #c45a3c;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--body-line-height);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background var(--transition-theme),
+    color var(--transition-theme);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Paper texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: url("/paper-texture.png") repeat;
+  background-size: 300px;
+  opacity: 1.3;
+}
+
+/* Ensure content sits above texture */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section {
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
+}
+
+.section-divider {
+  background: var(--bg-contrast);
+  color: var(--text-on-contrast);
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.section-divider > .container {
+  background: var(--bg-contrast);
+  color: var(--text-on-contrast);
+  padding: 60px 48px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.section-divider__title {
+  font-family: var(--font-display);
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--text-on-contrast);
+}
+
+.text-justified {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.accent-line {
+  width: 80px;
+  height: 3px;
+  background: var(--divider-accent);
+}
+
+/* ============================================
+   VISUALLY HIDDEN (accessibility)
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================
+   PAPER TEXTURE — day mode only
+   ============================================ */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: url("/paper-texture.png") repeat;
+  background-size: 300px;
+  transition: opacity var(--transition-theme);
+}
+
+[data-theme="night"] body::before,
+body:has([data-theme="night"])::before {
+  opacity: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   FORM ELEMENTS — night mode fix
+   ============================================ */
+[data-theme="night"] select option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}

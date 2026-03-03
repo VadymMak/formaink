@@ -1,0 +1,78 @@
+.wrapper {
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.trigger:hover {
+  color: var(--text-primary);
+  border-color: var(--accent);
+  background: var(--bg-card);
+}
+
+.chevron {
+  transition: transform var(--transition-fast);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 56px;
+  background: var(--bg-primary);
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 120;
+}
+
+.option {
+  padding: 8px 14px;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.option:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.optionActive {
+  color: var(--accent);
+  font-weight: 600;
+}

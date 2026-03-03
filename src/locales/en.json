@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "FormaInk — Design & Print for Your Business",
+    "description": "Professional design studio in Trenčín. Logos, business cards, menus, branding for restaurants and small business."
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "order": "Order"
+  },
+  "common": {
+    "viewAll": "View all",
+    "orderDesign": "Order design",
+    "contactUs": "Contact us",
+    "readMore": "Read more",
+    "backToHome": "Back to home",
+    "comingSoon": "Coming soon"
+  },
+  "hero": {
+    "title": "FormaInk",
+    "subtitle": "Branding • Print • Restaurant Design",
+    "cta": "View portfolio",
+    "ctaSecondary": "Order design"
+  },
+  "services": {
+    "title": "What we do",
+    "brandIdentity": "Brand Identity",
+    "brandIdentityDesc": "Logos, brandbooks, color systems and visual style for your brand",
+    "print": "Print & Stationery",
+    "printDesc": "Business cards, calendars, posters, flyers, t-shirts — design + print via typography",
+    "restaurant": "Restaurant Package",
+    "restaurantDesc": "Menus, business cards, seasonal updates, drink lists, labels",
+    "smm": "Social Media",
+    "smmDesc": "Instagram management, content planning, photography for restaurants"
+  },
+  "portfolio": {
+    "title": "Our projects",
+    "viewCase": "View project"
+  },
+  "clients": {
+    "title": "Our clients"
+  },
+  "about": {
+    "title": "About the Studio",
+    "text": "Design studio founded by Anastasiia Kolesnik. Direct collaboration with the designer on every project. No middlemen — you work with the expert.",
+    "partners": "Our partners"
+  },
+  "testimonials": {
+    "title": "What clients say"
+  },
+  "cta": {
+    "title": "Ready for a new project?",
+    "subtitle": "Get in touch and let's discuss your design",
+    "button": "Contact us"
+  },
+  "footer": {
+    "tagline": "Design & print for your business",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "copyright": "© {year} FormaInk. All rights reserved.",
+    "location": "Trenčín, Slovakia",
+    "privacy": "Privacy Policy"
+  },
+  "pages": {
+    "portfolio": {
+      "metaTitle": "Portfolio | FormaInk",
+      "metaDesc": "Our best projects — Adriano, Star Food, UB Market",
+      "title": "Portfolio",
+      "subtitle": "Selected projects and case studies"
+    },
+    "contact": {
+      "metaTitle": "Contact | FormaInk",
+      "metaDesc": "Contact us for design and print services",
+      "title": "Contact us",
+      "subtitle": "Ready to start a new project? Reach out through the form or directly.",
+      "formPlaceholder": "Contact form — coming soon"
+    },
+    "blog": {
+      "metaTitle": "Blog | FormaInk",
+      "metaDesc": "Articles about design, branding and business",
+      "title": "Blog",
+      "subtitle": "Articles about design, branding and print",
+      "comingSoon": "Articles coming soon..."
+    },
+    "servicesDesign": {
+      "metaTitle": "Brand Identity | FormaInk",
+      "metaDesc": "Logos, brandbook, visual style for your business",
+      "breadcrumb": "Brand Identity",
+      "title": "Brand Identity",
+      "description": "We create visual identity that expresses the essence of your business. From logo to complete brandbook.",
+      "logo": "Logo",
+      "logoDesc": "Unique logo designed for your brand",
+      "brandbook": "Brandbook",
+      "brandbookDesc": "Complete visual identity manual",
+      "identity": "Visual Style",
+      "identityDesc": "Color schemes, typography, patterns",
+      "cta": "Order design"
+    },
+    "servicesPrint": {
+      "metaTitle": "Print & Stationery | FormaInk",
+      "metaDesc": "Business cards, calendars, posters, flyers — design and print",
+      "breadcrumb": "Print & Stationery",
+      "title": "Print & Stationery",
+      "description": "Design + professional print via typography. Business cards, posters, calendars, t-shirts and more.",
+      "cards": "Business Cards",
+      "cardsDesc": "Standard, pearl, specialty papers",
+      "posters": "Posters & Flyers",
+      "postersDesc": "A5, A4, A3 formats — various papers",
+      "merch": "Merch & T-shirts",
+      "merchDesc": "Custom print on t-shirts, bags, accessories",
+      "cta": "Order print"
+    },
+    "servicesRestaurant": {
+      "metaTitle": "Restaurant Package | FormaInk",
+      "metaDesc": "Complete design package for restaurants — menus, cards, labels",
+      "breadcrumb": "Restaurant Package",
+      "title": "Restaurant Package",
+      "description": "Complete visual package for restaurants: menus, business cards, drink lists, seasonal materials.",
+      "menu": "Menu Design",
+      "menuDesc": "Food and drink menu in your venue style",
+      "seasonal": "Seasonal Updates",
+      "seasonalDesc": "Menu changes, holiday materials, special offers",
+      "package": "Annual Package",
+      "packageDesc": "All-in-one at a discount — quarterly billing",
+      "cta": "Order package"
+    },
+    "servicesSmm": {
+      "metaTitle": "Social Media | FormaInk",
+      "metaDesc": "Instagram and social media management for restaurants",
+      "breadcrumb": "Social Media",
+      "title": "Social Media",
+      "description": "Professional Instagram and social media management for restaurants and gastro businesses.",
+      "content": "Content Plan",
+      "contentDesc": "Monthly plan for posts, stories, reels",
+      "photo": "Photography",
+      "photoDesc": "Professional food and interior photos",
+      "management": "Profile Management",
+      "managementDesc": "Regular posting, replies, engagement",
+      "cta": "Order management"
+    }
+  },
+  "contactForm": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@email.com",
+    "projectType": "Project type",
+    "typeBrand": "Brand Identity",
+    "typePrint": "Print & Stationery",
+    "typeRestaurant": "Restaurant Package",
+    "typeSmm": "Social Media",
+    "typeOther": "Other",
+    "message": "Message",
+    "messagePlaceholder": "Describe your project...",
+    "send": "Send",
+    "sending": "Sending...",
+    "errorName": "Enter your name (min. 2 chars)",
+    "errorEmail": "Enter a valid email",
+    "errorMessage": "Message must be at least 10 characters",
+    "errorGeneral": "Something went wrong. Try again.",
+    "successTitle": "Message sent!",
+    "successText": "We will reply within 24 hours.",
+    "sendAnother": "Send another message"
+  }
+}

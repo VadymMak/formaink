@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "FormaInk — Design & Druck für Ihr Unternehmen",
+    "description": "Professionelles Designstudio in Trenčín. Logos, Visitenkarten, Menüs, Branding für Restaurants und Kleinunternehmen."
+  },
+  "nav": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "services": "Leistungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "order": "Bestellung"
+  },
+  "common": {
+    "viewAll": "Alle anzeigen",
+    "orderDesign": "Design bestellen",
+    "contactUs": "Kontaktieren Sie uns",
+    "readMore": "Weiterlesen",
+    "backToHome": "Zurück zur Startseite",
+    "comingSoon": "Demnächst"
+  },
+  "hero": {
+    "title": "FormaInk",
+    "subtitle": "Branding • Druckerei • Restaurantdesign",
+    "cta": "Portfolio ansehen",
+    "ctaSecondary": "Design bestellen"
+  },
+  "services": {
+    "title": "Was wir machen",
+    "brandIdentity": "Markenidentität",
+    "brandIdentityDesc": "Logos, Markenhandbücher, Farbsysteme und visueller Stil für Ihre Marke",
+    "print": "Druck & Drucksachen",
+    "printDesc": "Visitenkarten, Kalender, Poster, Flyer, T-Shirts — Design + Druck über Druckerei",
+    "restaurant": "Restaurant-Paket",
+    "restaurantDesc": "Speisekarten, Visitenkarten, saisonale Updates, Getränkekarten, Etiketten",
+    "smm": "Soziale Medien",
+    "smmDesc": "Instagram-Management, Content-Planung, Fotografie für Restaurants"
+  },
+  "portfolio": {
+    "title": "Unsere Projekte",
+    "viewCase": "Projekt ansehen"
+  },
+  "clients": {
+    "title": "Unsere Kunden"
+  },
+  "about": {
+    "title": "Über das Studio",
+    "text": "Designstudio gegründet von Anastasiia Kolesnik. Direkte Zusammenarbeit mit der Designerin bei jedem Projekt. Keine Vermittler — Sie arbeiten mit der Expertin.",
+    "partners": "Unsere Partner"
+  },
+  "testimonials": {
+    "title": "Was Kunden sagen"
+  },
+  "cta": {
+    "title": "Bereit für ein neues Projekt?",
+    "subtitle": "Schreiben Sie uns und besprechen wir Ihr Design",
+    "button": "Kontaktieren Sie uns"
+  },
+  "footer": {
+    "tagline": "Design & Druck für Ihr Unternehmen",
+    "portfolio": "Portfolio",
+    "services": "Leistungen",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "copyright": "© {year} FormaInk. Alle Rechte vorbehalten.",
+    "location": "Trenčín, Slowakei",
+    "privacy": "Datenschutz"
+  },
+  "pages": {
+    "portfolio": {
+      "metaTitle": "Portfolio | FormaInk",
+      "metaDesc": "Unsere besten Projekte — Adriano, Star Food, UB Market",
+      "title": "Portfolio",
+      "subtitle": "Ausgewählte Projekte und Fallstudien"
+    },
+    "contact": {
+      "metaTitle": "Kontakt | FormaInk",
+      "metaDesc": "Kontaktieren Sie uns für Design und Druck",
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Bereit für ein neues Projekt? Schreiben Sie uns.",
+      "formPlaceholder": "Kontaktformular — demnächst"
+    },
+    "blog": {
+      "metaTitle": "Blog | FormaInk",
+      "metaDesc": "Artikel über Design, Branding und Business",
+      "title": "Blog",
+      "subtitle": "Artikel über Design, Branding und Druck",
+      "comingSoon": "Artikel kommen bald..."
+    },
+    "servicesDesign": {
+      "metaTitle": "Markenidentität | FormaInk",
+      "metaDesc": "Logos, Markenhandbuch, visueller Stil",
+      "breadcrumb": "Markenidentität",
+      "title": "Markenidentität",
+      "description": "Visuelle Identität, die Ihr Unternehmen ausdrückt.",
+      "logo": "Logo",
+      "logoDesc": "Einzigartiges Logo für Ihre Marke",
+      "brandbook": "Markenhandbuch",
+      "brandbookDesc": "Komplettes visuelles Identitätshandbuch",
+      "identity": "Visueller Stil",
+      "identityDesc": "Farbschemata, Typografie, Muster",
+      "cta": "Design bestellen"
+    },
+    "servicesPrint": {
+      "metaTitle": "Druck & Drucksachen | FormaInk",
+      "metaDesc": "Visitenkarten, Kalender, Poster — Design und Druck",
+      "breadcrumb": "Druck",
+      "title": "Druck & Drucksachen",
+      "description": "Design + professioneller Druck über Druckerei.",
+      "cards": "Visitenkarten",
+      "cardsDesc": "Standard, Perlmutt, Spezialpapiere",
+      "posters": "Poster & Flyer",
+      "postersDesc": "A5, A4, A3 Formate",
+      "merch": "Merch & T-Shirts",
+      "merchDesc": "Bedruckte T-Shirts, Taschen, Accessoires",
+      "cta": "Druck bestellen"
+    },
+    "servicesRestaurant": {
+      "metaTitle": "Restaurant-Paket | FormaInk",
+      "metaDesc": "Komplettes Designpaket für Restaurants",
+      "breadcrumb": "Restaurants",
+      "title": "Restaurant-Paket",
+      "description": "Komplettes visuelles Paket: Speisekarten, Visitenkarten, Getränkekarten.",
+      "menu": "Speisekartendesign",
+      "menuDesc": "Speise- und Getränkekarte im Stil Ihres Lokals",
+      "seasonal": "Saisonale Updates",
+      "seasonalDesc": "Menüänderungen, Feiertagsmaterialien",
+      "package": "Jahrespaket",
+      "packageDesc": "Alles inklusive — vierteljährliche Abrechnung",
+      "cta": "Paket bestellen"
+    },
+    "servicesSmm": {
+      "metaTitle": "Soziale Medien | FormaInk",
+      "metaDesc": "Instagram-Management für Restaurants",
+      "breadcrumb": "Soziale Medien",
+      "title": "Soziale Medien",
+      "description": "Professionelles Instagram-Management für Restaurants.",
+      "content": "Content-Plan",
+      "contentDesc": "Monatlicher Plan für Posts, Stories, Reels",
+      "photo": "Fotografie",
+      "photoDesc": "Professionelle Food- und Interieurfotos",
+      "management": "Profilmanagement",
+      "managementDesc": "Regelmäßiges Posten, Antworten, Engagement",
+      "cta": "Management bestellen"
+    }
+  },
+  "contactForm": {
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "sie@email.com",
+    "projectType": "Projekttyp",
+    "typeBrand": "Markenidentität",
+    "typePrint": "Druck & Drucksachen",
+    "typeRestaurant": "Restaurant-Paket",
+    "typeSmm": "Soziale Medien",
+    "typeOther": "Sonstiges",
+    "message": "Nachricht",
+    "messagePlaceholder": "Beschreiben Sie Ihr Projekt...",
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "errorName": "Name eingeben (min. 2 Zeichen)",
+    "errorEmail": "Gültige E-Mail eingeben",
+    "errorMessage": "Nachricht muss mind. 10 Zeichen lang sein",
+    "errorGeneral": "Etwas ist schiefgelaufen. Versuchen Sie es erneut.",
+    "successTitle": "Nachricht gesendet!",
+    "successText": "Wir antworten innerhalb von 24 Stunden.",
+    "sendAnother": "Weitere Nachricht senden"
+  }
+}
