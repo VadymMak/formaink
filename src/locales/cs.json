@@ -25,6 +25,26 @@
     "cta": "Zobrazit portfolio",
     "ctaSecondary": "Objednat design"
   },
+  "homeServices": {
+    "logo": "Loga",
+    "logoSub": "Kompletní vizuální identita",
+    "logoAlt": "Kolekce log: Adriano, Star Food, Laser Craft Wood, UB Market",
+    "branding": "Branding",
+    "brandingSub": "Od konceptu po hotovou značku",
+    "brandingAlt": "Restaurace Adriano: jídelní lístek, vizitky, vizuální identita",
+    "smm": "SMM",
+    "smmSub": "Sociální sítě pro firmy",
+    "smmAlt": "S-MAK: design billboardu, balení produktů, branding",
+    "posters": "Plakáty",
+    "postersSub": "Venkovní reklama a plakáty",
+    "postersAlt": "Tajstra: design venkovního billboardu",
+    "print": "Tisk",
+    "printSub": "Etikety, obaly, vizitky",
+    "printAlt": "Star Food: etikety, design obalů, identita značky",
+    "contact": "Kontakt",
+    "contactSub": "Promluvme si za 5 minut",
+    "contactAlt": "Anastasia Kolesnik — designérka při práci"
+  },
   "services": {
     "title": "Co pro vás uděláme",
     "brandIdentity": "Firemní identita",

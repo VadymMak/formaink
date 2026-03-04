@@ -25,6 +25,26 @@
     "cta": "View portfolio",
     "ctaSecondary": "Order design"
   },
+  "homeServices": {
+    "logo": "Logos",
+    "logoSub": "Complete visual identity",
+    "logoAlt": "Logo collection: Adriano, Star Food, Laser Craft Wood, UB Market",
+    "branding": "Branding",
+    "brandingSub": "From concept to finished brand",
+    "brandingAlt": "Adriano Restaurant branding: menu, business cards, visual identity",
+    "smm": "SMM",
+    "smmSub": "Social media for business",
+    "smmAlt": "S-MAK: billboard design, product packaging, branding",
+    "posters": "Posters",
+    "postersSub": "Outdoor advertising & posters",
+    "postersAlt": "Taystra: outdoor billboard advertising design",
+    "print": "Print",
+    "printSub": "Labels, packaging, business cards",
+    "printAlt": "Star Food: product labels, packaging design, brand identity",
+    "contact": "Contact",
+    "contactSub": "Let's discuss in 5 minutes",
+    "contactAlt": "Anastasia Kolesnik — designer at work"
+  },
   "services": {
     "title": "What we do",
     "brandIdentity": "Brand Identity",
