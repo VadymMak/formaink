@@ -69,7 +69,8 @@
   "about": {
     "title": "Über das Studio",
     "text": "Designstudio gegründet von Anastasiia Kolesnik. Direkte Zusammenarbeit mit der Designerin bei jedem Projekt. Keine Vermittler — Sie arbeiten mit der Expertin.",
-    "partners": "Unsere Partner"
+    "partners": "Unsere Partner",
+    "photoAlt": "Anastasia Kolesnik — Designerin bei der Arbeit mit iPad"
   },
   "testimonials": {
     "title": "Was Kunden sagen"

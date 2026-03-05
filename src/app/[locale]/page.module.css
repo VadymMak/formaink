@@ -6,7 +6,7 @@
 
 /* ====== Services Section (FIRST — above fold) ====== */
 .servicesSection {
-  padding: 24px 0 20px;
+  padding: 24px 0 var(--section-gap);
 }
 
 /* ====== Stats Bar ====== */
@@ -323,6 +323,14 @@
 .aboutPhoto {
   display: flex;
   justify-content: center;
+}
+
+.aboutImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 24px rgba(45, 42, 38, 0.12);
 }
 
 /* ====== Testimonials ====== */

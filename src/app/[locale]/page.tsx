@@ -299,12 +299,15 @@ export default async function HomePage({ params }: Props) {
             </ScrollReveal>
             <ScrollReveal animation="fadeRight" delay={200}>
               <div className={styles.aboutPhoto}>
-                <div
-                  className={styles.placeholder}
-                  style={{ minHeight: "400px" }}
-                >
-                  Anastasia Photo
-                </div>
+                <Image
+                  src="/images/anastasia-about.webp"
+                  alt={tAbout("photoAlt" as any)}
+                  width={800}
+                  height={1000}
+                  quality={85}
+                  className={styles.aboutImage}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </ScrollReveal>
           </div>

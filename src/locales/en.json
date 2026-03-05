@@ -69,7 +69,8 @@
   "about": {
     "title": "About the Studio",
     "text": "Design studio founded by Anastasiia Kolesnik. Direct collaboration with the designer on every project. No middlemen — you work with the expert.",
-    "partners": "Our partners"
+    "partners": "Our partners",
+    "photoAlt": "Anastasia Kolesnik — designer at work with iPad"
   },
   "testimonials": {
     "title": "What clients say"
