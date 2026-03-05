@@ -1,5 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header/Header";
@@ -26,6 +27,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <GoogleAnalytics />
       <a
         href="#main"
         className="sr-only"
