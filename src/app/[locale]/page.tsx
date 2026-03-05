@@ -284,22 +284,12 @@ export default async function HomePage({ params }: Props) {
             </ScrollReveal>
             <ScrollReveal animation="fadeRight" delay={150}>
               <div className={styles.caseGallery}>
-                <div className={styles.caseImage}>
+                <div className={styles.caseImageWide}>
                   <Image
-                    src="/images/portfolio/star-food/packaging.webp"
-                    alt="Star Food — sunflower oil bottle with label"
+                    src="/images/portfolio/star-food/overview.webp"
+                    alt="Star Food — product labels, packaging design, brand identity"
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={85}
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div className={styles.caseImage}>
-                  <Image
-                    src="/images/portfolio/star-food/label.webp"
-                    alt="Star Food — Deep Frying Oil label design"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 60vw"
                     quality={85}
                     style={{ objectFit: "cover" }}
                   />
