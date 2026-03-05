@@ -29,12 +29,12 @@
     "logo": "Loga",
     "logoSub": "Kompletní vizuální identita",
     "logoAlt": "Kolekce log: Adriano, Star Food, Laser Craft Wood, UB Market",
-    "branding": "Branding",
-    "brandingSub": "Od konceptu po hotovou značku",
-    "brandingAlt": "Restaurace Adriano: jídelní lístek, vizitky, vizuální identita",
     "statProjects": "projektů",
     "statYears": "let",
     "statSatisfaction": "spokojenost",
+    "branding": "Branding",
+    "brandingSub": "Od konceptu po hotovou značku",
+    "brandingAlt": "Restaurace Adriano: jídelní lístek, vizitky, vizuální identita",
     "smm": "SMM",
     "smmSub": "Sociální sítě pro firmy",
     "smmAlt": "S-MAK: design billboardu, balení produktů, branding",
@@ -93,9 +93,19 @@
   "pages": {
     "portfolio": {
       "metaTitle": "Portfolio | FormaInk",
-      "metaDesc": "Naše nejlepší projekty — Adriano, Star Food, UB Market",
+      "metaDesc": "Naše nejlepší projekty — Adriano, Star Food, UB Market, S-MAK, Taystra",
       "title": "Portfolio",
-      "subtitle": "Vybrané projekty a případové studie"
+      "subtitle": "Vybrané projekty a případové studie",
+      "adrianoAlt": "Restaurace Adriano — design menu na dřevěném stole",
+      "adrianoCategory": "Branding pro restaurace",
+      "star-foodAlt": "Star Food — etikety a design obalů",
+      "star-foodCategory": "Obaly a etikety",
+      "smakAlt": "S-MAK — billboard a produktový branding",
+      "smakCategory": "Branding a billboard",
+      "taystraAlt": "Tajstra — venkovní reklama billboard",
+      "taystraCategory": "Venkovní reklama",
+      "ctaText": "Líbí se vám? Vytvoříme něco pro vaši značku.",
+      "ctaButton": "Začít projekt"
     },
     "contact": {
       "metaTitle": "Kontakt | FormaInk",

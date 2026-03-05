@@ -93,9 +93,19 @@
   "pages": {
     "portfolio": {
       "metaTitle": "Портфоліо | FormaInk",
-      "metaDesc": "Наші найкращі проєкти — Adriano, Star Food, UB Market",
+      "metaDesc": "Наші найкращі проєкти — Adriano, Star Food, UB Market, S-MAK, Taystra",
       "title": "Портфоліо",
-      "subtitle": "Вибрані проєкти та кейси"
+      "subtitle": "Вибрані проєкти та кейси",
+      "adrianoAlt": "Ресторан Adriano — дизайн меню на дерев'яному столі",
+      "adrianoCategory": "Брендинг ресторану",
+      "star-foodAlt": "Star Food — етикетки та дизайн упаковки",
+      "star-foodCategory": "Упаковка та етикетки",
+      "smakAlt": "S-MAK — білборд та продуктовий брендинг",
+      "smakCategory": "Брендинг та білборд",
+      "taystraAlt": "Тайстра — зовнішня реклама білборд",
+      "taystraCategory": "Зовнішня реклама",
+      "ctaText": "Подобається? Створимо щось для вашого бренду.",
+      "ctaButton": "Розпочати проєкт"
     },
     "contact": {
       "metaTitle": "Контакти | FormaInk",

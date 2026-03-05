@@ -29,12 +29,12 @@
     "logo": "Logos",
     "logoSub": "Komplette visuelle Identität",
     "logoAlt": "Logo-Kollektion: Adriano, Star Food, Laser Craft Wood, UB Market",
-    "branding": "Branding",
-    "brandingSub": "Vom Konzept zur fertigen Marke",
-    "brandingAlt": "Restaurant Adriano: Speisekarte, Visitenkarten, visuelle Identität",
     "statProjects": "Projekte",
     "statYears": "Jahre",
     "statSatisfaction": "Zufriedenheit",
+    "branding": "Branding",
+    "brandingSub": "Vom Konzept zur fertigen Marke",
+    "brandingAlt": "Restaurant Adriano: Speisekarte, Visitenkarten, visuelle Identität",
     "smm": "SMM",
     "smmSub": "Social Media für Unternehmen",
     "smmAlt": "S-MAK: Billboard-Design, Produktverpackung, Branding",
@@ -93,9 +93,19 @@
   "pages": {
     "portfolio": {
       "metaTitle": "Portfolio | FormaInk",
-      "metaDesc": "Unsere besten Projekte — Adriano, Star Food, UB Market",
+      "metaDesc": "Unsere besten Projekte — Adriano, Star Food, UB Market, S-MAK, Taystra",
       "title": "Portfolio",
-      "subtitle": "Ausgewählte Projekte und Fallstudien"
+      "subtitle": "Ausgewählte Projekte und Fallstudien",
+      "adrianoAlt": "Restaurant Adriano — Menüdesign auf Holztisch",
+      "adrianoCategory": "Restaurant-Branding",
+      "star-foodAlt": "Star Food — Etiketten und Verpackungsdesign",
+      "star-foodCategory": "Verpackung & Etiketten",
+      "smakAlt": "S-MAK — Billboard und Produkt-Branding",
+      "smakCategory": "Branding & Billboard",
+      "taystraAlt": "Tajstra — Außenwerbung Billboard",
+      "taystraCategory": "Außenwerbung",
+      "ctaText": "Gefällt Ihnen? Lassen Sie uns etwas für Ihre Marke schaffen.",
+      "ctaButton": "Projekt starten"
     },
     "contact": {
       "metaTitle": "Kontakt | FormaInk",

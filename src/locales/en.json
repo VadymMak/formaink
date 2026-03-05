@@ -93,9 +93,19 @@
   "pages": {
     "portfolio": {
       "metaTitle": "Portfolio | FormaInk",
-      "metaDesc": "Our best projects — Adriano, Star Food, UB Market",
+      "metaDesc": "Our best projects — Adriano, Star Food, UB Market, S-MAK, Taystra",
       "title": "Portfolio",
-      "subtitle": "Selected projects and case studies"
+      "subtitle": "Selected projects and case studies",
+      "adrianoAlt": "Adriano Restaurant — menu design on wooden table",
+      "adrianoCategory": "Restaurant branding",
+      "star-foodAlt": "Star Food — product labels and packaging design",
+      "star-foodCategory": "Packaging & labels",
+      "smakAlt": "S-MAK — billboard and product branding",
+      "smakCategory": "Branding & billboard",
+      "taystraAlt": "Taystra — outdoor billboard advertising",
+      "taystraCategory": "Outdoor advertising",
+      "ctaText": "Like what you see? Let's create something for your brand.",
+      "ctaButton": "Start a project"
     },
     "contact": {
       "metaTitle": "Contact | FormaInk",

@@ -1,56 +1,142 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '@/i18n/navigation';
-import type { Metadata } from 'next';
-import styles from './page.module.css';
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import Image from "next/image";
+import type { Metadata } from "next";
+import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
+import styles from "./page.module.css";
 
 type Props = { params: Promise<{ locale: string }> };
-const BASE_URL = 'https://formaink.com';
+const BASE_URL = "https://formaink.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'pages.portfolio' });
+  const t = await getTranslations({ locale, namespace: "pages.portfolio" });
   return {
-    title: t('metaTitle'),
-    description: t('metaDesc'),
+    title: t("metaTitle"),
+    description: t("metaDesc"),
     alternates: { canonical: `${BASE_URL}/${locale}/portfolio` },
   };
 }
 
-const cases = [
-  { slug: 'adriano', category: 'Restaurant branding', colors: ['#2D4A43', '#D4A574', '#F5F0E8', '#8B3A2A'] },
-  { slug: 'star-food', category: 'Packaging & labels', colors: ['#E8C840', '#1A5C3A', '#FFFFFF', '#333333'] },
-  { slug: 'ub-market', category: 'Full branding', colors: ['#1A3A5C', '#F0A030', '#FAFAFA', '#222222'] },
+const projects = [
+  {
+    slug: "adriano",
+    image: "/images/portfolio/adriano/menu.webp",
+    category: "restaurantBranding",
+    colors: ["#2D4A43", "#D4A574", "#F5F0E8", "#8B3A2A"],
+    images: [
+      "/images/portfolio/adriano/menu.webp",
+      "/images/portfolio/adriano/cards.webp",
+      "/images/portfolio/adriano/labels.webp",
+    ],
+  },
+  {
+    slug: "star-food",
+    image: "/images/portfolio/star-food/overview.webp",
+    category: "packagingLabels",
+    colors: ["#E8C840", "#1A5C3A", "#FFFFFF", "#333333"],
+    images: ["/images/portfolio/star-food/overview.webp"],
+  },
+  {
+    slug: "smak",
+    image: "/images/services/card-smm.webp",
+    category: "brandingBillboard",
+    colors: ["#C4372A", "#E8C44A", "#4A8EB0", "#8B7355"],
+    images: [],
+  },
+  {
+    slug: "taystra",
+    image: "/images/services/card-posters.webp",
+    category: "outdoorAdvertising",
+    colors: ["#1A1A1A", "#D4722A", "#B08050", "#8B6A4A"],
+    images: [],
+  },
 ];
 
 export default async function PortfolioPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'pages.portfolio' });
+  const t = await getTranslations({ locale, namespace: "pages.portfolio" });
 
   return (
     <section className="section">
       <div className="container">
-        <h1 className={styles.pageTitle}>{t('title')}</h1>
-        <p className={styles.pageSubtitle}>{t('subtitle')}</p>
+        <ScrollReveal animation="fadeUp">
+          <h1 className={styles.pageTitle}>{t("title")}</h1>
+          <p className={styles.pageSubtitle}>{t("subtitle")}</p>
+        </ScrollReveal>
 
-        <div className={styles.caseList}>
-          {cases.map((c) => (
-            <div key={c.slug} className={styles.caseCard}>
-              <div className={styles.caseImage}>
-                <div className={styles.placeholder}>{c.slug}</div>
-              </div>
-              <div className={styles.caseInfo}>
-                <h2 className={styles.caseName}>{c.slug.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</h2>
-                <p className={styles.caseCategory}>{c.category}</p>
-                <div className={styles.palette}>
-                  {c.colors.map((color, i) => (
-                    <div key={i} className={styles.swatch} style={{ background: color, border: color === '#FFFFFF' ? '1px solid #ccc' : 'none' }} />
-                  ))}
+        <div className={styles.projectGrid}>
+          {projects.map((project, i) => (
+            <ScrollReveal key={project.slug} animation="fadeUp" delay={i * 100}>
+              <div className={styles.projectCard}>
+                <div className={styles.projectImage}>
+                  <Image
+                    src={project.image}
+                    alt={t(`${project.slug}Alt` as any)}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    quality={85}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div className={styles.projectInfo}>
+                  <h2 className={styles.projectName}>
+                    {project.slug === "star-food"
+                      ? "Star Food"
+                      : project.slug === "smak"
+                        ? "S-MAK"
+                        : project.slug.charAt(0).toUpperCase() +
+                          project.slug.slice(1)}
+                  </h2>
+                  <p className={styles.projectCategory}>
+                    {t(`${project.slug}Category` as any)}
+                  </p>
+                  <div className={styles.palette}>
+                    {project.colors.map((color, ci) => (
+                      <div
+                        key={ci}
+                        className={styles.swatch}
+                        style={{
+                          background: color,
+                          border:
+                            color === "#FFFFFF" ? "1px solid #ccc" : "none",
+                        }}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+
+              {/* Gallery for projects with multiple images */}
+              {project.images.length > 1 && (
+                <div className={styles.gallery}>
+                  {project.images.map((img, gi) => (
+                    <div key={gi} className={styles.galleryItem}>
+                      <Image
+                        src={img}
+                        alt={`${project.slug} work ${gi + 1}`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        quality={85}
+                        style={{ objectFit: "cover" }}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal animation="fadeUp" delay={200}>
+          <div className={styles.ctaBlock}>
+            <p className={styles.ctaText}>{t("ctaText" as any)}</p>
+            <Link href="/contact" className={styles.cta}>
+              {t("ctaButton" as any)}
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
