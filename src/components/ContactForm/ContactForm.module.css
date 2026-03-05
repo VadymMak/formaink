@@ -39,7 +39,7 @@
 }
 
 .inputError {
-  border-color: #C0392B;
+  border-color: #c0392b;
 }
 
 .textarea {
@@ -50,7 +50,7 @@
 
 .error {
   font-size: 0.8125rem;
-  color: #C0392B;
+  color: #c0392b;
 }
 
 .submit {
@@ -65,7 +65,9 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background var(--transition-fast), opacity var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    opacity var(--transition-fast);
   align-self: flex-start;
 }
 
@@ -76,6 +78,17 @@
 .submit:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.presetTag {
+  display: inline-block;
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--bg-card);
+  border: 1px solid var(--divider-accent);
+  border-radius: var(--card-radius);
 }
 
 /* Success state */
@@ -126,7 +139,9 @@
   border: 1px solid var(--accent);
   border-radius: 4px;
   cursor: pointer;
-  transition: background var(--transition-fast), color var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .resetBtn:hover {
