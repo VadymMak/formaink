@@ -213,9 +213,36 @@ export default async function HomePage({ params }: Props) {
             </ScrollReveal>
             <ScrollReveal animation="fadeRight" delay={150}>
               <div className={styles.caseGallery}>
-                <div className={styles.placeholder}>Menu</div>
-                <div className={styles.placeholder}>Cards</div>
-                <div className={styles.placeholder}>Labels</div>
+                <div className={styles.caseImage}>
+                  <Image
+                    src="/images/portfolio/adriano/menu.webp"
+                    alt="Adriano Restaurant — menu design on table"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    quality={85}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div className={styles.caseImage}>
+                  <Image
+                    src="/images/portfolio/adriano/cards.webp"
+                    alt="Adriano Restaurant — promotional flyer"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    quality={85}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div className={styles.caseImage}>
+                  <Image
+                    src="/images/portfolio/adriano/labels.webp"
+                    alt="Adriano Restaurant — brand identity poster"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    quality={85}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
               </div>
             </ScrollReveal>
           </div>
@@ -257,8 +284,26 @@ export default async function HomePage({ params }: Props) {
             </ScrollReveal>
             <ScrollReveal animation="fadeRight" delay={150}>
               <div className={styles.caseGallery}>
-                <div className={styles.placeholder}>Packaging</div>
-                <div className={styles.placeholder}>Label</div>
+                <div className={styles.caseImage}>
+                  <Image
+                    src="/images/portfolio/star-food/packaging.webp"
+                    alt="Star Food — sunflower oil bottle with label"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={85}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <div className={styles.caseImage}>
+                  <Image
+                    src="/images/portfolio/star-food/label.webp"
+                    alt="Star Food — Deep Frying Oil label design"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={85}
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
               </div>
             </ScrollReveal>
           </div>
