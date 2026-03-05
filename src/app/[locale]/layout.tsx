@@ -4,11 +4,19 @@ import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header/Header";
+import type { Metadata } from "next";
 import Footer from "@/components/Footer/Footer";
 
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
+};
+
+export const metadata: Metadata = {
+  icons: { icon: "/favicon.ico" },
+  verification: {
+    google: "Oa26gCZ8byCYQKPq6tdPTzEiDT5MudyJETxasIhIwCw",
+  },
 };
 
 export function generateStaticParams() {
