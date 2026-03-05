@@ -51,32 +51,32 @@ const serviceCards = [
   {
     key: "logo",
     href: "/services/design",
-    image: "/images/services/logos-collection.webp",
+    image: "/images/services/card-logos.webp",
   },
   {
     key: "branding",
     href: "/services/design",
-    image: "/images/services/adriano-trencin-overview.webp",
+    image: "/images/services/card-branding.webp",
   },
   {
     key: "smm",
     href: "/services/smm",
-    image: "/images/services/smak-overview.webp",
+    image: "/images/services/card-smm.webp",
   },
   {
     key: "posters",
     href: "/services/print",
-    image: "/images/services/taystra-overview.webp",
+    image: "/images/services/card-posters.webp",
   },
   {
     key: "print",
     href: "/services/print",
-    image: "/images/services/star-food-overview.webp",
+    image: "/images/services/card-print.webp",
   },
   {
     key: "contact",
     href: "/contact",
-    image: "/images/services/contact-portrait.webp",
+    image: "/images/services/card-contact.webp",
   },
 ];
 
@@ -127,6 +127,28 @@ export default async function HomePage({ params }: Props) {
       {/* Section 1: Services Grid — FIRST THING visible */}
       <section className={styles.servicesSection}>
         <div className="container">
+          <div className={styles.statsBar}>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>30+</span>
+              <span className={styles.statLabel}>
+                {tServices("statProjects" as any)}
+              </span>
+            </div>
+            <span className={styles.statDot}>·</span>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>5+</span>
+              <span className={styles.statLabel}>
+                {tServices("statYears" as any)}
+              </span>
+            </div>
+            <span className={styles.statDot}>·</span>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>100%</span>
+              <span className={styles.statLabel}>
+                {tServices("statSatisfaction" as any)}
+              </span>
+            </div>
+          </div>
           <div className={styles.servicesGrid}>
             {serviceCards.map(({ key, href, image }, i) => (
               <ScrollReveal key={key} animation="fadeUp" delay={i * 80}>
@@ -140,15 +162,6 @@ export default async function HomePage({ params }: Props) {
                       quality={85}
                       style={{ objectFit: "cover" }}
                     />
-                    <div className={styles.serviceCardGradient} />
-                  </div>
-                  <div className={styles.serviceCardText}>
-                    <span className={styles.serviceCardLabel}>
-                      {tServices(key as any)}
-                    </span>
-                    <span className={styles.serviceCardSub}>
-                      {tServices(`${key}Sub` as any)}
-                    </span>
                   </div>
                   <div className={styles.serviceCardAccent} />
                 </Link>

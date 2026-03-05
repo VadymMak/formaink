@@ -1,11 +1,51 @@
 /* ============================================
    HOME PAGE — Nadia Kolomiets magazine style
-   Updated: image-based service cards
+   Updated: Anastasia's custom card images
+   (text labels built into images — no overlay needed)
    ============================================ */
 
 /* ====== Services Section (FIRST — above fold) ====== */
 .servicesSection {
-  padding: 24px 0 var(--section-gap);
+  padding: 24px 0 20px;
+}
+
+/* ====== Stats Bar ====== */
+.statsBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.statItem {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.statDot {
+  font-size: 1.5rem;
+  color: var(--accent);
+  opacity: 0.5;
+  line-height: 1;
 }
 
 .servicesGrid {
@@ -16,8 +56,7 @@
 
 /* ====== Service Card ====== */
 .serviceCard {
-  display: flex;
-  flex-direction: column;
+  display: block;
   background: var(--bg-card);
   border-radius: var(--card-radius);
   overflow: hidden;
@@ -37,11 +76,11 @@
   transform: translateY(-6px);
 }
 
-/* Card image area */
+/* Card image — fills entire card */
 .serviceCardImage {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
 }
 
@@ -50,47 +89,7 @@
 }
 
 .serviceCard:hover .serviceCardImage img {
-  transform: scale(1.06);
-}
-
-/* Gradient overlay at bottom of image */
-.serviceCardGradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background: linear-gradient(
-    transparent,
-    color-mix(in srgb, var(--bg-card) 50%, transparent)
-  );
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Card text area */
-.serviceCardText {
-  padding: 16px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.serviceCardLabel {
-  font-family: var(--font-heading);
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-}
-
-.serviceCardSub {
-  font-family: var(--font-body);
-  font-size: 0.8125rem;
-  color: var(--accent);
-  line-height: 1.4;
-  opacity: 0.85;
+  transform: scale(1.04);
 }
 
 /* Hover accent line at bottom */
@@ -391,17 +390,26 @@
 
 /* ====== Responsive ====== */
 @media (max-width: 768px) {
+  .statsBar {
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .statNumber {
+    font-size: 1.25rem;
+  }
+
+  .statLabel {
+    font-size: 0.625rem;
+  }
+
   .servicesGrid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
   .serviceCardImage {
-    aspect-ratio: 16 / 10;
-  }
-
-  .serviceCardText {
-    padding: 12px 16px 16px;
+    aspect-ratio: 4 / 3;
   }
 
   .caseStudy {
