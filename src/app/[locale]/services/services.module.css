@@ -1,3 +1,5 @@
+/* ─── BREADCRUMB ──────────────────────────────────────────────────────────── */
+
 .breadcrumb {
   font-size: 0.8125rem;
   font-weight: 600;
@@ -10,6 +12,12 @@
   color: var(--accent);
   text-decoration: none;
 }
+
+.breadcrumb span {
+  color: var(--text-muted);
+}
+
+/* ─── PAGE HEADER ─────────────────────────────────────────────────────────── */
 
 .title {
   font-family: var(--font-heading);
@@ -25,6 +33,8 @@
   max-width: 640px;
   margin-bottom: 48px;
 }
+
+/* ─── FEATURE CARDS ───────────────────────────────────────────────────────── */
 
 .features {
   display: grid;
@@ -52,6 +62,8 @@
   line-height: var(--body-line-height);
 }
 
+/* ─── CTA ─────────────────────────────────────────────────────────────────── */
+
 .ctaWrap {
   margin-top: 48px;
 }
@@ -74,7 +86,7 @@
   background: var(--accent);
 }
 
-/* ─── PRICING ─────────────────────────────────────────── */
+/* ─── PRICING SECTION ─────────────────────────────────────────────────────── */
 
 .pricingSection {
   margin-top: 72px;
@@ -82,13 +94,29 @@
   border-top: 1px solid var(--divider);
 }
 
+.pricingSection + .pricingSection {
+  margin-top: 16px;
+}
+
+.pricingSectionHeader {
+  margin-bottom: 32px;
+}
+
 .pricingTitle {
   font-family: var(--font-heading);
   font-size: var(--font-size-h2);
   font-weight: 700;
-  margin-bottom: 40px;
   color: var(--text-primary);
+  margin-bottom: 0;
 }
+
+.pricingSubtitle {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+/* ─── PRICING GRID ────────────────────────────────────────────────────────── */
 
 .pricingGrid {
   display: grid;
@@ -135,8 +163,15 @@
   font-size: 2rem;
   font-weight: 800;
   color: var(--accent);
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   letter-spacing: -0.02em;
+}
+
+.pricingDesc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 .pricingList {
@@ -172,15 +207,63 @@
   letter-spacing: 0.04em;
 }
 
-/* breadcrumb home link */
-.breadcrumb a {
-  color: var(--accent);
-  text-decoration: none;
+/* ─── BRANDBOOK BANNER ────────────────────────────────────────────────────── */
+
+.brandbookBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 32px;
+  margin: 40px 0;
+  background: var(--bg-card);
+  border: 1px solid var(--divider);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--card-radius);
 }
 
-.breadcrumb span {
-  color: var(--text-muted);
+.brandbookBannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
+
+.brandbookBannerTitle {
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.brandbookBannerDesc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.brandbookBannerCta {
+  flex-shrink: 0;
+  padding: 10px 24px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  text-decoration: none;
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.brandbookBannerCta:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────────────────────────────── */
 
 @media (max-width: 900px) {
   .pricingGrid {
@@ -195,5 +278,18 @@
 @media (max-width: 768px) {
   .features {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .brandbookBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .brandbookBannerCta {
+    align-self: stretch;
+    text-align: center;
   }
 }
