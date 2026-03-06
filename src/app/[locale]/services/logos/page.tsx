@@ -10,10 +10,7 @@ const BASE_URL = "https://formaink.com";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({
-    locale,
-    namespace: "pages.servicesDesign",
-  });
+  const t = await getTranslations({ locale, namespace: "pages.servicesLogos" });
 
   const localeMap: Record<string, string> = {
     sk: "sk",
@@ -25,34 +22,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
   const languages: Record<string, string> = {};
   for (const [loc, hreflang] of Object.entries(localeMap)) {
-    languages[hreflang] = `${BASE_URL}/${loc}/services/design`;
+    languages[hreflang] = `${BASE_URL}/${loc}/services/logos`;
   }
-  languages["x-default"] = `${BASE_URL}/sk/services/design`;
+  languages["x-default"] = `${BASE_URL}/sk/services/logos`;
 
   return {
     title: t("metaTitle"),
     description: t("metaDesc"),
     alternates: {
-      canonical: `${BASE_URL}/${locale}/services/design`,
+      canonical: `${BASE_URL}/${locale}/services/logos`,
       languages,
     },
     openGraph: {
       title: t("metaTitle"),
       description: t("metaDesc"),
-      url: `${BASE_URL}/${locale}/services/design`,
+      url: `${BASE_URL}/${locale}/services/logos`,
       siteName: "FormaInk",
       images: [{ url: `${BASE_URL}/og-image.jpg`, width: 1200, height: 630 }],
     },
   };
 }
 
-export default async function DesignServicePage({ params }: Props) {
+export default async function LogosPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({
-    locale,
-    namespace: "pages.servicesDesign",
-  });
+  const t = await getTranslations({ locale, namespace: "pages.servicesLogos" });
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -63,24 +57,24 @@ export default async function DesignServicePage({ params }: Props) {
     offers: [
       {
         "@type": "Offer",
-        name: t("brand1Name"),
-        price: t("brand1Price"),
+        name: t("logo1Name"),
+        price: t("logo1Price"),
         priceCurrency: "EUR",
-        description: t("brand1Desc"),
+        description: t("logo1Desc"),
       },
       {
         "@type": "Offer",
-        name: t("brand2Name"),
-        price: t("brand2Price"),
+        name: t("logo2Name"),
+        price: t("logo2Price"),
         priceCurrency: "EUR",
-        description: t("brand2Desc"),
+        description: t("logo2Desc"),
       },
       {
         "@type": "Offer",
-        name: t("brand3Name"),
-        price: t("brand3Price"),
+        name: t("logo3Name"),
+        price: t("logo3Price"),
         priceCurrency: "EUR",
-        description: t("brand3Desc"),
+        description: t("logo3Desc"),
       },
     ],
   };
@@ -109,53 +103,65 @@ export default async function DesignServicePage({ params }: Props) {
           <ScrollReveal animation="fadeUp" delay={120}>
             <div className={styles.pricingGrid}>
               <div className={styles.pricingCard}>
-                <p className={styles.pricingName}>{t("brand1Name")}</p>
-                <p className={styles.pricingPrice}>{t("brand1Price")}</p>
-                <p className={styles.pricingDesc}>{t("brand1Desc")}</p>
+                <p className={styles.pricingName}>{t("logo1Name")}</p>
+                <p className={styles.pricingPrice}>{t("logo1Price")}</p>
+                <p className={styles.pricingDesc}>{t("logo1Desc")}</p>
                 <ul className={styles.pricingList}>
-                  <li>{t("brand1Item1")}</li>
-                  <li>{t("brand1Item2")}</li>
-                  <li>{t("brand1Item3")}</li>
-                  <li>{t("brand1Item4")}</li>
-                  <li>{t("brand1Item5")}</li>
+                  <li>{t("logo1Item1")}</li>
+                  <li>{t("logo1Item2")}</li>
+                  <li>{t("logo1Item3")}</li>
                 </ul>
-                <p className={styles.pricingDeadline}>{t("brand1Deadline")}</p>
+                <p className={styles.pricingDeadline}>{t("logo1Deadline")}</p>
               </div>
 
               <div
                 className={`${styles.pricingCard} ${styles.pricingCardFeatured}`}
               >
                 <p className={styles.pricingBadge}>{t("popular")}</p>
-                <p className={styles.pricingName}>{t("brand2Name")}</p>
-                <p className={styles.pricingPrice}>{t("brand2Price")}</p>
-                <p className={styles.pricingDesc}>{t("brand2Desc")}</p>
+                <p className={styles.pricingName}>{t("logo2Name")}</p>
+                <p className={styles.pricingPrice}>{t("logo2Price")}</p>
+                <p className={styles.pricingDesc}>{t("logo2Desc")}</p>
                 <ul className={styles.pricingList}>
-                  <li>{t("brand2Item1")}</li>
-                  <li>{t("brand2Item2")}</li>
-                  <li>{t("brand2Item3")}</li>
-                  <li>{t("brand2Item4")}</li>
-                  <li>{t("brand2Item5")}</li>
+                  <li>{t("logo2Item1")}</li>
+                  <li>{t("logo2Item2")}</li>
+                  <li>{t("logo2Item3")}</li>
+                  <li>{t("logo2Item4")}</li>
                 </ul>
-                <p className={styles.pricingDeadline}>{t("brand2Deadline")}</p>
+                <p className={styles.pricingDeadline}>{t("logo2Deadline")}</p>
               </div>
 
               <div className={styles.pricingCard}>
-                <p className={styles.pricingName}>{t("brand3Name")}</p>
-                <p className={styles.pricingPrice}>{t("brand3Price")}</p>
-                <p className={styles.pricingDesc}>{t("brand3Desc")}</p>
+                <p className={styles.pricingName}>{t("logo3Name")}</p>
+                <p className={styles.pricingPrice}>{t("logo3Price")}</p>
+                <p className={styles.pricingDesc}>{t("logo3Desc")}</p>
                 <ul className={styles.pricingList}>
-                  <li>{t("brand3Item1")}</li>
-                  <li>{t("brand3Item2")}</li>
-                  <li>{t("brand3Item3")}</li>
-                  <li>{t("brand3Item4")}</li>
-                  <li>{t("brand3Item5")}</li>
+                  <li>{t("logo3Item1")}</li>
+                  <li>{t("logo3Item2")}</li>
+                  <li>{t("logo3Item3")}</li>
+                  <li>{t("logo3Item4")}</li>
                 </ul>
-                <p className={styles.pricingDeadline}>{t("brand3Deadline")}</p>
+                <p className={styles.pricingDeadline}>{t("logo3Deadline")}</p>
               </div>
             </div>
           </ScrollReveal>
 
           <ScrollReveal animation="fadeUp" delay={160}>
+            <div className={styles.brandbookBanner}>
+              <div className={styles.brandbookBannerContent}>
+                <p className={styles.brandbookBannerTitle}>
+                  {t("brandbookBanner")}
+                </p>
+                <p className={styles.brandbookBannerDesc}>
+                  {t("brandbookBannerDesc")}
+                </p>
+              </div>
+              <a href="#contact-form" className={styles.brandbookBannerCta}>
+                {t("brandbookBannerCta")}
+              </a>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="fadeUp" delay={200}>
             <div id="contact-form">
               <ContactForm
                 presetService="brand-identity"

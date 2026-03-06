@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const serviceCards = [
   {
     key: "logo",
-    href: "/services/design",
+    href: "/services/logos",
     image: "/images/services/card-logos.webp",
   },
   {
