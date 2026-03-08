@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
+import dynamic from "next/dynamic";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import CookieBanner from "@/components/ui/CookieBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -24,6 +24,10 @@ export const metadata: Metadata = {
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+const CookieBanner = dynamic(() => import("@/components/ui/CookieBanner"), {
+  ssr: false,
+});
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
