@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
 import styles from "./Header.module.css";
@@ -70,8 +71,15 @@ export default function Header() {
         className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${visible ? "" : styles.hidden}`}
       >
         <div className={`container ${styles.inner}`}>
-          <Link href="/" className={styles.logo}>
-            Forma<span className={styles.logoAccent}>Ink</span>
+          <Link href="/" className={styles.logo} aria-label="FormaInk">
+            <Image
+              src="/logo.svg"
+              alt="FormaInk"
+              width={44}
+              height={44}
+              priority
+              className={styles.logoImage}
+            />
           </Link>
 
           <nav className={styles.nav}>
@@ -122,7 +130,6 @@ export default function Header() {
           <LanguageSwitcher />
         </div>
       </div>
-      )
     </>
   );
 }
