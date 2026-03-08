@@ -5,8 +5,6 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   images: {
-    formats: ["image/webp"],
-    qualities: [75],
     minimumCacheTTL: 0,
   },
   experimental: {
