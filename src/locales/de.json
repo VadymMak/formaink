@@ -46,7 +46,9 @@
     "printAlt": "Star Food: Produktetiketten, Verpackungsdesign, Markenidentität",
     "contact": "Kontakt",
     "contactSub": "In 5 Minuten besprechen",
-    "contactAlt": "Anastasia Kolesnik — Designerin bei der Arbeit"
+    "contactAlt": "Anastasia Kolesnik — Designerin bei der Arbeit",
+    "viewService": "Mehr erfahren",
+    "contactCta": "Projekt starten"
   },
   "services": {
     "title": "Was wir machen",
@@ -428,6 +430,26 @@
       "cta": "SMM bestellen",
       "formTitle": "Social-Media-Management bestellen",
       "formSubtitle": "Beschreiben Sie Ihr Profil und Ihre Ziele — wir antworten innerhalb von 24 Stunden."
+    },
+    "services": {
+      "metaTitle": "Leistungen — FormaInk Trenčín",
+      "metaDesc": "Logo-Design, Branding, Druck, SMM und Restaurant-Pakete. Design-Studio Trenčín.",
+      "breadcrumbHome": "Startseite",
+      "breadcrumb": "Leistungen",
+      "title": "Unsere Leistungen",
+      "subtitle": "Design, Druck und Marketing für Unternehmen in Trenčín und Umgebung",
+      "logosName": "Logos & Branding",
+      "logosDesc": "Logo, visuelle Identität, Brandbuch",
+      "brandingName": "Markenidentität",
+      "brandingDesc": "Komplette visuelle Unternehmensidentität",
+      "printName": "Druck & Materialien",
+      "printDesc": "Visitenkarten, Plakate, Flyer, Banner",
+      "smmName": "Instagram & SMM",
+      "smmDesc": "Instagram-Management, Content-Plan, Fotografie",
+      "restaurantName": "Restaurant-Paket",
+      "restaurantDesc": "Speisekarte, Visitenkarten, Saisonmaterialien",
+      "ctaText": "Unsicher was Sie brauchen? Sprechen wir.",
+      "ctaBtn": "Kostenlose Beratung →"
     }
   },
   "contactForm": {

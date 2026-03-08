@@ -53,13 +53,14 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: t("home") },
     { href: "/portfolio", label: t("portfolio") },
-    { href: "/services/design", label: t("services") },
+    { href: "/services", label: t("services") },
     { href: "/blog", label: t("blog") },
     { href: "/contact", label: t("contact") },
   ];
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
+    if (href === "/services") return pathname === "/services";
     return pathname.startsWith(href);
   };
 

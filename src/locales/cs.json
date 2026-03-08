@@ -46,7 +46,9 @@
     "printAlt": "Star Food: etikety, design obalů, identita značky",
     "contact": "Kontakt",
     "contactSub": "Promluvme si za 5 minut",
-    "contactAlt": "Anastasia Kolesnik — designérka při práci"
+    "contactAlt": "Anastasia Kolesnik — designérka při práci",
+    "viewService": "Zobrazit",
+    "contactCta": "Začít projekt"
   },
   "services": {
     "title": "Co pro vás uděláme",
@@ -428,6 +430,26 @@
       "cta": "Objednat SMM",
       "formTitle": "Objednat správu sociálních sítí",
       "formSubtitle": "Popište svůj profil a cíle — odpovíme do 24 hodin."
+    },
+    "services": {
+      "metaTitle": "Služby — FormaInk Trenčín",
+      "metaDesc": "Design loga, branding, tisk, SMM a balíčky pro restaurace. Designové studio Trenčín.",
+      "breadcrumbHome": "Domů",
+      "breadcrumb": "Služby",
+      "title": "Naše služby",
+      "subtitle": "Design, tisk a marketing pro firmy v Trenčíně a okolí",
+      "logosName": "Loga & Branding",
+      "logosDesc": "Logo, vizuální identita, brandbook",
+      "brandingName": "Brand Identity",
+      "brandingDesc": "Kompletní vizuální identita firmy",
+      "printName": "Tisk & Materiály",
+      "printDesc": "Vizitky, plakáty, letáky, bannery",
+      "smmName": "Instagram & SMM",
+      "smmDesc": "Správa Instagramu, content plán, fotografie",
+      "restaurantName": "Restaurační balíček",
+      "restaurantDesc": "Menu, vizitky, sezónní materiály",
+      "ctaText": "Nevíte co vybrat? Promluvme si.",
+      "ctaBtn": "Nezávazná konzultace →"
     }
   },
   "contactForm": {

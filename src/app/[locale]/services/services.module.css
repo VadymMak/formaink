@@ -27,13 +27,8 @@
 }
 
 .description {
-  color: var(--text-secondary);
-  font-size: 1.125rem;
-  line-height: 1.7;
-  max-width: 640px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
-
 /* ─── FEATURE CARDS ───────────────────────────────────────────────────────── */
 
 .features {
@@ -89,8 +84,8 @@
 /* ─── PRICING SECTION ─────────────────────────────────────────────────────── */
 
 .pricingSection {
-  margin-top: 72px;
-  padding-top: 64px;
+  margin-top: 40px;
+  padding-top: 40px;
   border-top: 1px solid var(--divider);
 }
 

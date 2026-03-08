@@ -52,31 +52,37 @@ const serviceCards = [
     key: "logo",
     href: "/services/logos",
     image: "/images/services/card-logos.webp",
+    price: "od €50",
   },
   {
     key: "branding",
     href: "/services/design",
     image: "/images/services/card-branding.webp",
+    price: "od €150",
   },
   {
     key: "smm",
     href: "/services/smm",
     image: "/images/services/card-smm.webp",
+    price: "od €80/mes",
   },
   {
     key: "posters",
     href: "/services/print",
     image: "/images/services/card-posters.webp",
+    price: "od €30",
   },
   {
     key: "print",
     href: "/services/print",
     image: "/images/services/card-print.webp",
+    price: "od €30",
   },
   {
     key: "contact",
     href: "/contact",
     image: "/images/services/card-contact.webp",
+    price: null,
   },
 ];
 
@@ -124,7 +130,7 @@ export default async function HomePage({ params }: Props) {
         }}
       />
 
-      {/* Section 1: Services Grid — FIRST THING visible */}
+      {/* Section 1: Services Grid */}
       <section className={styles.servicesSection}>
         <div className="container">
           <div className={styles.statsBar}>
@@ -149,10 +155,12 @@ export default async function HomePage({ params }: Props) {
               </span>
             </div>
           </div>
+
           <div className={styles.servicesGrid}>
-            {serviceCards.map(({ key, href, image }, i) => (
+            {serviceCards.map(({ key, href, image, price }, i) => (
               <ScrollReveal key={key} animation="fadeUp" delay={i * 80}>
                 <Link href={href} className={styles.serviceCard}>
+                  {/* Image — unchanged */}
                   <div className={styles.serviceCardImage}>
                     <Image
                       src={image}
@@ -163,6 +171,23 @@ export default async function HomePage({ params }: Props) {
                       style={{ objectFit: "cover" }}
                     />
                   </div>
+
+                  {/* Hover overlay — transparent layer with price + CTA */}
+                  <div className={styles.serviceCardOverlay}>
+                    <div className={styles.serviceCardOverlayContent}>
+                      {price && (
+                        <span className={styles.serviceCardPrice}>{price}</span>
+                      )}
+                      <span className={styles.serviceCardCta}>
+                        {key === "contact"
+                          ? tServices("contactCta" as any)
+                          : tServices("viewService" as any)}
+                        {" →"}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Accent line at bottom — unchanged */}
                   <div className={styles.serviceCardAccent} />
                 </Link>
               </ScrollReveal>
@@ -249,15 +274,17 @@ export default async function HomePage({ params }: Props) {
 
           <div className={styles.caseDivider} />
 
-          {/* Case: Star Food */}
+          {/* Case: Star Food / UB Market */}
           <div className={styles.caseStudy}>
             <ScrollReveal animation="fadeLeft">
               <div className={styles.caseText}>
-                <h3 className={styles.caseTitle}>Star Food</h3>
-                <p className={styles.caseCategory}>Packaging &amp; labels</p>
+                <h3 className={styles.caseTitle}>UB Market</h3>
+                <p className={styles.caseCategory}>
+                  Labels &amp; packaging · Star Food brand
+                </p>
                 <p className={`${styles.caseDesc} text-justified`}>
                   Food packaging with EU compliance — labels, brand identity,
-                  product line.
+                  product line for Star Food Luxury.
                 </p>
                 <div className={styles.palette}>
                   <div
@@ -287,7 +314,7 @@ export default async function HomePage({ params }: Props) {
                 <div className={styles.caseImageWide}>
                   <Image
                     src="/images/portfolio/star-food/overview.webp"
-                    alt="Star Food — product labels, packaging design, brand identity"
+                    alt="UB Market — Star Food product labels, packaging design, brand identity"
                     fill
                     sizes="(max-width: 768px) 100vw, 60vw"
                     quality={85}
@@ -307,8 +334,10 @@ export default async function HomePage({ params }: Props) {
             <h2 className="section-divider__title">{tClients("title")}</h2>
             <div className={styles.clientLogos}>
               <span className={styles.clientLogo}>Adriano</span>
-              <span className={styles.clientLogo}>Star Food</span>
               <span className={styles.clientLogo}>UB Market</span>
+              <span className={styles.clientLogo}>Star Food</span>
+              <span className={styles.clientLogo}>Baloon Party</span>
+              <span className={styles.clientLogo}>Laser Craft Wood</span>
             </div>
           </div>
         </div>
@@ -371,7 +400,7 @@ export default async function HomePage({ params }: Props) {
                   &ldquo;Excellent packaging design with full EU compliance.
                   Highly recommend.&rdquo;
                 </p>
-                <cite>— Star Food</cite>
+                <cite>— Star Food / UB Market</cite>
               </blockquote>
             </ScrollReveal>
           </div>
