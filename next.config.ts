@@ -6,7 +6,11 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
-    qualities: [85],
+    qualities: [75],
+  },
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ["next-intl"],
   },
   async redirects() {
     return [
