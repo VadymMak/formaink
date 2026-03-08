@@ -209,7 +209,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background: url("/paper-texture.png") repeat;
+  background: url("/paper-texture.webp") repeat;
   background-size: 300px;
   opacity: 1.3;
   transition: opacity var(--transition-theme);
