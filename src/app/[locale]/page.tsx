@@ -157,8 +157,8 @@ export default async function HomePage({ params }: Props) {
           </div>
 
           <div className={styles.servicesGrid}>
-            {serviceCards.map(({ key, href, image, price }, i) => (
-              <ScrollReveal key={key} animation="fadeUp" delay={i * 80}>
+            {serviceCards.map(({ key, href, image, price }, i) => {
+              const card = (
                 <Link href={href} className={styles.serviceCard}>
                   <div className={styles.serviceCardImage}>
                     <Image
@@ -166,14 +166,12 @@ export default async function HomePage({ params }: Props) {
                       alt={tServices(`${key}Alt` as any)}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      quality={85}
+                      quality={75}
                       style={{ objectFit: "cover" }}
-                      priority={i < 2} // ← добавь эту строку
-                      loading={i < 2 ? undefined : "lazy"} // ← и эту
+                      priority={i < 2}
+                      loading={i < 2 ? undefined : "lazy"}
                     />
                   </div>
-
-                  {/* Hover overlay — transparent layer with price + CTA */}
                   <div className={styles.serviceCardOverlay}>
                     <div className={styles.serviceCardOverlayContent}>
                       {price && (
@@ -187,12 +185,19 @@ export default async function HomePage({ params }: Props) {
                       </span>
                     </div>
                   </div>
-
-                  {/* Accent line at bottom — unchanged */}
                   <div className={styles.serviceCardAccent} />
                 </Link>
-              </ScrollReveal>
-            ))}
+              );
+
+              // Первые 2 карточки — без ScrollReveal, грузятся мгновенно (LCP fix)
+              if (i < 2) return <div key={key}>{card}</div>;
+
+              return (
+                <ScrollReveal key={key} animation="fadeUp" delay={i * 80}>
+                  {card}
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -245,7 +250,7 @@ export default async function HomePage({ params }: Props) {
                     alt="Adriano Restaurant — menu design on table"
                     fill
                     sizes="(max-width: 768px) 100vw, 25vw"
-                    quality={85}
+                    quality={75}
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -255,7 +260,7 @@ export default async function HomePage({ params }: Props) {
                     alt="Adriano Restaurant — promotional flyer"
                     fill
                     sizes="(max-width: 768px) 100vw, 25vw"
-                    quality={85}
+                    quality={75}
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -265,7 +270,7 @@ export default async function HomePage({ params }: Props) {
                     alt="Adriano Restaurant — brand identity poster"
                     fill
                     sizes="(max-width: 768px) 100vw, 25vw"
-                    quality={85}
+                    quality={75}
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -318,7 +323,7 @@ export default async function HomePage({ params }: Props) {
                     alt="UB Market — Star Food product labels, packaging design, brand identity"
                     fill
                     sizes="(max-width: 768px) 100vw, 60vw"
-                    quality={85}
+                    quality={75}
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -369,7 +374,7 @@ export default async function HomePage({ params }: Props) {
                   alt={tAbout("photoAlt" as any)}
                   width={800}
                   height={1000}
-                  quality={85}
+                  quality={75}
                   className={styles.aboutImage}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
