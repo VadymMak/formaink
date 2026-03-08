@@ -206,10 +206,8 @@
       "brandbookDesc": "Kompletní manuál vizuální identity",
       "identity": "Vizuální styl",
       "identityDesc": "Barevná schémata, typografie, vzory",
-
       "section1Title": "Pouze logo",
       "section1Subtitle": "Rychlé řešení — logo s podklady a 3 variantami",
-
       "logo1Name": "Start",
       "logo1Price": "€50 – €150",
       "logo1Desc": "Logo bez hlubokého zpracování",
@@ -217,7 +215,6 @@
       "logo1Item2": "Soubory AI, PNG, SVG",
       "logo1Item3": "Barevná paleta",
       "logo1Deadline": "Termín: 3–5 prac. dní",
-
       "logo2Name": "Standard",
       "logo2Price": "€150 – €400",
       "logo2Desc": "Logo + základní brand-guide",
@@ -226,7 +223,6 @@
       "logo2Item3": "Rozšířený soubor podkladů",
       "logo2Item4": "Základní brand-guide",
       "logo2Deadline": "Termín: 5–7 prac. dní",
-
       "logo3Name": "Rozšířený",
       "logo3Price": "€400 – €800",
       "logo3Desc": "Logo + mini-identita",
@@ -235,15 +231,12 @@
       "logo3Item3": "Barevná schémata + typografie",
       "logo3Item4": "Brand-guide (základní)",
       "logo3Deadline": "Termín: 7–10 prac. dní",
-
       "brandbookBanner": "Potřebujete pouze brandbook?",
       "brandbookBannerDesc": "Vizuální identita, pravidla použití, šablony — od €450",
       "brandbookBannerCta": "Napsat o brandbooku",
-
       "section2Title": "Kompletní branding",
       "section2Subtitle": "Hluboká práce se značkou — strategie, vizuální systém, implementace",
       "popular": "Nejoblíbenější",
-
       "brand1Name": "Visual Basic",
       "brand1Price": "€1 500 – €3 500",
       "brand1Desc": "Pro malý byznys a lokální projekty",
@@ -253,7 +246,6 @@
       "brand1Item4": "3 šablony pro sociální sítě",
       "brand1Item5": "1 reklamní banner",
       "brand1Deadline": "Termín: 14–21 prac. dní",
-
       "brand2Name": "Visual Pro",
       "brand2Price": "€2 000 – €4 000",
       "brand2Desc": "Optimální balíček pro malý a střední byznys",
@@ -263,7 +255,6 @@
       "brand2Item4": "6–10 šablon pro sociální sítě",
       "brand2Item5": "Vizitky + prezentace + favicon",
       "brand2Deadline": "Termín: 21–30 prac. dní",
-
       "brand3Name": "Brand Identity Premium",
       "brand3Price": "€4 000 – €7 000",
       "brand3Desc": "Plný branding s art-direkcí",
@@ -273,7 +264,6 @@
       "brand3Item4": "Komerční design: prezentace, obaly, outdoor",
       "brand3Item5": "Firemní nosiče + podpora implementace",
       "brand3Deadline": "Termín: 30–45 prac. dní",
-
       "cta": "Objednat design",
       "formTitle": "Objednat design",
       "formSubtitle": "Popište váš projekt — odpovíme do 24 hodin."
@@ -508,5 +498,11 @@
     "successTitle": "Zpráva odeslána!",
     "successText": "Odpovíme vám do 24 hodin.",
     "sendAnother": "Odeslat další zprávu"
+  },
+  "cookieBanner": {
+    "text": "Tento web používá cookies pro analytiku a zlepšení vašeho zážitku.",
+    "link": "Zásady ochrany soukromí",
+    "accept": "Přijmout vše",
+    "decline": "Odmítnout"
   }
 }

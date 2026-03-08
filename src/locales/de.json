@@ -206,10 +206,8 @@
       "brandbookDesc": "Vollständiges Handbuch der visuellen Identität",
       "identity": "Visueller Stil",
       "identityDesc": "Farbschemata, Typografie, Muster",
-
       "section1Title": "Nur Logo",
       "section1Subtitle": "Schnelle Lieferung — Logo mit Quelldateien und 3 Konzepten",
-
       "logo1Name": "Starter",
       "logo1Price": "€50 – €150",
       "logo1Desc": "Logo ohne tiefe Strategiearbeit",
@@ -217,7 +215,6 @@
       "logo1Item2": "AI, PNG, SVG Dateien",
       "logo1Item3": "Farbpalette",
       "logo1Deadline": "Lieferung: 3–5 Werktage",
-
       "logo2Name": "Standard",
       "logo2Price": "€150 – €400",
       "logo2Desc": "Logo + einfacher Markenleitfaden",
@@ -226,7 +223,6 @@
       "logo2Item3": "Erweitertes Dateipaket",
       "logo2Item4": "Einfacher Markenleitfaden",
       "logo2Deadline": "Lieferung: 5–7 Werktage",
-
       "logo3Name": "Erweitert",
       "logo3Price": "€400 – €800",
       "logo3Desc": "Logo + Mini-Identität",
@@ -235,15 +231,12 @@
       "logo3Item3": "Farbschemata + Typografie",
       "logo3Item4": "Markenleitfaden (Basis)",
       "logo3Deadline": "Lieferung: 7–10 Werktage",
-
       "brandbookBanner": "Brauchen Sie nur ein Brandbook?",
       "brandbookBannerDesc": "Visuelle Identität, Verwendungsregeln, Vorlagen — ab €450",
       "brandbookBannerCta": "Nach Brandbook anfragen",
-
       "section2Title": "Vollständiges Branding",
       "section2Subtitle": "Tiefe Markenarbeit — Strategie, visuelles System, Implementierung",
       "popular": "Beliebtestes",
-
       "brand1Name": "Visual Basic",
       "brand1Price": "€1.500 – €3.500",
       "brand1Desc": "Für Kleinunternehmen und lokale Projekte",
@@ -253,7 +246,6 @@
       "brand1Item4": "3 Social-Media-Vorlagen",
       "brand1Item5": "1 Werbebanner",
       "brand1Deadline": "Lieferung: 14–21 Werktage",
-
       "brand2Name": "Visual Pro",
       "brand2Price": "€2.000 – €4.000",
       "brand2Desc": "Optimales Paket für KMU",
@@ -263,7 +255,6 @@
       "brand2Item4": "6–10 Social-Media-Vorlagen",
       "brand2Item5": "Visitenkarten + Präsentation + Favicon",
       "brand2Deadline": "Lieferung: 21–30 Werktage",
-
       "brand3Name": "Brand Identity Premium",
       "brand3Price": "€4.000 – €7.000",
       "brand3Desc": "Vollständiges Branding mit Art Direction",
@@ -273,7 +264,6 @@
       "brand3Item4": "Kommerzielles Design: Präsentationen, Verpackung, Outdoor",
       "brand3Item5": "Markenmaterialien + Implementierungsunterstützung",
       "brand3Deadline": "Lieferung: 30–45 Werktage",
-
       "cta": "Design bestellen",
       "formTitle": "Design bestellen",
       "formSubtitle": "Beschreiben Sie Ihr Projekt — wir antworten innerhalb von 24 Stunden."
@@ -508,5 +498,11 @@
     "successTitle": "Nachricht gesendet!",
     "successText": "Wir antworten innerhalb von 24 Stunden.",
     "sendAnother": "Weitere Nachricht senden"
+  },
+  "cookieBanner": {
+    "text": "Diese Website verwendet Cookies für Analysen und zur Verbesserung Ihrer Erfahrung.",
+    "link": "Datenschutzerklärung",
+    "accept": "Alle akzeptieren",
+    "decline": "Ablehnen"
   }
 }

@@ -1,12 +1,13 @@
 "use client";
-
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import styles from "./CookieBanner.module.css";
 
 const COOKIE_KEY = "formaink_cookie_consent";
 
 export default function CookieBanner() {
+  const t = useTranslations("cookieBanner");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -30,19 +31,18 @@ export default function CookieBanner() {
     <div className={styles.banner} role="dialog" aria-label="Cookie consent">
       <div className={styles.inner}>
         <p className={styles.text}>
-          🍪 Tento web používa cookies na analytiku a zlepšenie zážitku. Viac
-          info v{" "}
+          🍪 {t("text")}{" "}
           <Link href="/privacy" className={styles.link}>
-            zásadách ochrany súkromia
+            {t("link")}
           </Link>
           .
         </p>
         <div className={styles.actions}>
           <button onClick={decline} className={styles.decline}>
-            Odmietnuť
+            {t("decline")}
           </button>
           <button onClick={accept} className={styles.accept}>
-            Prijať všetky
+            {t("accept")}
           </button>
         </div>
       </div>

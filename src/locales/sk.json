@@ -122,11 +122,9 @@
       "smakDesc": "Branding, billboard dizajn a produktové obaly pre potravinársku značku.",
       "smakDuration": "2 týždne",
       "smakBudget": "€200 – €350",
-
       "taystraDesc": "Vonkajšia reklama, citylight a plagátový dizajn pre lokálnu značku.",
       "taystraDuration": "1 týždeň",
       "taystraBudget": "€80 – €150",
-
       "startSimilar": "Chcem podobný projekt",
       "ub-marketAlt": "UB Market — dizajn loga a etikety Star Food",
       "ub-marketCategory": "Logo · Etikety · Vizitky",
@@ -208,10 +206,8 @@
       "brandbookDesc": "Kompletný manuál vizuálnej identity",
       "identity": "Vizuálny štýl",
       "identityDesc": "Farebné schémy, typografia, vzory",
-
       "section1Title": "Iba logotyp",
       "section1Subtitle": "Rýchle riešenie — logo s podkladmi a 3 variantmi",
-
       "logo1Name": "Štart",
       "logo1Price": "€50 – €150",
       "logo1Desc": "Logotyp bez hlbokého spracovania",
@@ -219,7 +215,6 @@
       "logo1Item2": "Súbory AI, PNG, SVG",
       "logo1Item3": "Farebná paleta",
       "logo1Deadline": "Termín: 3–5 prac. dní",
-
       "logo2Name": "Štandard",
       "logo2Price": "€150 – €400",
       "logo2Desc": "Logo + základný brand-guide",
@@ -228,7 +223,6 @@
       "logo2Item3": "Rozšírený súbor podkladov",
       "logo2Item4": "Základný brand-guide",
       "logo2Deadline": "Termín: 5–7 prac. dní",
-
       "logo3Name": "Rozšírený",
       "logo3Price": "€400 – €800",
       "logo3Desc": "Logo + mini-identita",
@@ -237,15 +231,12 @@
       "logo3Item3": "Farebné schémy + typografia",
       "logo3Item4": "Brand-guide (základný)",
       "logo3Deadline": "Termín: 7–10 prac. dní",
-
       "brandbookBanner": "Potrebujete iba brandbook?",
       "brandbookBannerDesc": "Vizuálna identita, pravidlá použitia, šablóny — od €450",
       "brandbookBannerCta": "Napísať o brandbookу",
-
       "section2Title": "Kompletný branding",
       "section2Subtitle": "Hlboká práca so značkou — stratégia, vizuálny systém, implementácia",
       "popular": "Najpopulárnejší",
-
       "brand1Name": "Visual Basic",
       "brand1Price": "€1 500 – €3 500",
       "brand1Desc": "Pre malý biznis a lokálne projekty",
@@ -255,7 +246,6 @@
       "brand1Item4": "3 šablóny pre sociálne siete",
       "brand1Item5": "1 reklamný banner",
       "brand1Deadline": "Termín: 14–21 prac. dní",
-
       "brand2Name": "Visual Pro",
       "brand2Price": "€2 000 – €4 000",
       "brand2Desc": "Optimálny balík pre malý a stredný biznis",
@@ -265,7 +255,6 @@
       "brand2Item4": "6–10 šablón pre sociálne siete",
       "brand2Item5": "Vizitky + prezentácia + favicon",
       "brand2Deadline": "Termín: 21–30 prac. dní",
-
       "brand3Name": "Brand Identity Premium",
       "brand3Price": "€4 000 – €7 000",
       "brand3Desc": "Plný branding s art-direktúrou",
@@ -275,7 +264,6 @@
       "brand3Item4": "Komerčný dizajn: prezentácie, obaly, outdoor",
       "brand3Item5": "Firemné nosiče + podpora implementácie",
       "brand3Deadline": "Termín: 30–45 prac. dní",
-
       "cta": "Objednať dizajn",
       "formTitle": "Objednať dizajn",
       "formSubtitle": "Opíšte váš projekt — odpovieme do 24 hodín."
@@ -510,5 +498,11 @@
     "successTitle": "Správa odoslaná!",
     "successText": "Odpovieme vám do 24 hodín.",
     "sendAnother": "Odoslať ďalšiu správu"
+  },
+  "cookieBanner": {
+    "text": "Tento web používa cookies na analytiku a zlepšenie zážitku.",
+    "link": "Zásady ochrany súkromia",
+    "accept": "Prijať všetky",
+    "decline": "Odmietnuť"
   }
 }

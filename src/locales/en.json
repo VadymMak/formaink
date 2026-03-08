@@ -206,10 +206,8 @@
       "brandbookDesc": "Complete visual identity manual",
       "identity": "Visual Style",
       "identityDesc": "Colour schemes, typography, patterns",
-
       "section1Title": "Logo Only",
       "section1Subtitle": "Fast delivery — logo with source files and 3 concepts",
-
       "logo1Name": "Starter",
       "logo1Price": "€50 – €150",
       "logo1Desc": "Logo without deep strategy work",
@@ -217,7 +215,6 @@
       "logo1Item2": "AI, PNG, SVG files",
       "logo1Item3": "Colour palette",
       "logo1Deadline": "Delivery: 3–5 working days",
-
       "logo2Name": "Standard",
       "logo2Price": "€150 – €400",
       "logo2Desc": "Logo + basic brand guide",
@@ -226,7 +223,6 @@
       "logo2Item3": "Extended file package",
       "logo2Item4": "Basic brand guide",
       "logo2Deadline": "Delivery: 5–7 working days",
-
       "logo3Name": "Extended",
       "logo3Price": "€400 – €800",
       "logo3Desc": "Logo + mini identity",
@@ -235,15 +231,12 @@
       "logo3Item3": "Colour schemes + typography",
       "logo3Item4": "Brand guide (basic)",
       "logo3Deadline": "Delivery: 7–10 working days",
-
       "brandbookBanner": "Need only a brandbook?",
       "brandbookBannerDesc": "Visual identity, usage rules, templates — from €450",
       "brandbookBannerCta": "Ask about brandbook",
-
       "section2Title": "Full Branding",
       "section2Subtitle": "Deep brand work — strategy, visual system, implementation",
       "popular": "Most popular",
-
       "brand1Name": "Visual Basic",
       "brand1Price": "€1,500 – €3,500",
       "brand1Desc": "For small businesses and local projects",
@@ -253,7 +246,6 @@
       "brand1Item4": "3 social media templates",
       "brand1Item5": "1 advertising banner",
       "brand1Deadline": "Delivery: 14–21 working days",
-
       "brand2Name": "Visual Pro",
       "brand2Price": "€2,000 – €4,000",
       "brand2Desc": "Optimal package for small & medium business",
@@ -263,7 +255,6 @@
       "brand2Item4": "6–10 social media templates",
       "brand2Item5": "Business cards + presentation + favicon",
       "brand2Deadline": "Delivery: 21–30 working days",
-
       "brand3Name": "Brand Identity Premium",
       "brand3Price": "€4,000 – €7,000",
       "brand3Desc": "Full branding with art direction",
@@ -273,7 +264,6 @@
       "brand3Item4": "Commercial design: presentations, packaging, outdoor",
       "brand3Item5": "Brand materials + implementation support",
       "brand3Deadline": "Delivery: 30–45 working days",
-
       "cta": "Order Design",
       "formTitle": "Order Design",
       "formSubtitle": "Describe your project — we reply within 24 hours."
@@ -508,5 +498,11 @@
     "successTitle": "Message sent!",
     "successText": "We will reply within 24 hours.",
     "sendAnother": "Send another message"
+  },
+  "cookieBanner": {
+    "text": "This website uses cookies for analytics and to improve your experience.",
+    "link": "Privacy Policy",
+    "accept": "Accept all",
+    "decline": "Decline"
   }
 }
