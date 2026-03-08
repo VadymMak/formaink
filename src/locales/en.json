@@ -75,7 +75,11 @@
     "photoAlt": "Anastasia Kolesnik — designer at work with iPad"
   },
   "testimonials": {
-    "title": "What clients say"
+    "title": "What clients say",
+    "adrianoText": "FormaInk created a complete visual identity for our restaurant in Trenčín and Vienna — menu, business cards, flyers and logo — in 3 weeks.",
+    "adrianoCite": "Adriano Restaurant, Trenčín & Vienna",
+    "starFoodText": "Anastasia designed 5 product labels for our sunflower oil line with full EU compliance. Print-ready in 10 business days.",
+    "starFoodCite": "Star Food / UB Market"
   },
   "cta": {
     "title": "Ready for a new project?",

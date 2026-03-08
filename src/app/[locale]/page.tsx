@@ -387,20 +387,14 @@ export default async function HomePage({ params }: Props) {
           <div className={styles.testimonialGrid}>
             <ScrollReveal animation="fadeUp" delay={0}>
               <blockquote className={styles.quote}>
-                <p>
-                  &ldquo;Professional approach and beautiful results. The menu
-                  design exceeded our expectations.&rdquo;
-                </p>
-                <cite>— Adriano Restaurant</cite>
+                <p>&ldquo;{tTestimonials("adrianoText")}&rdquo;</p>
+                <cite>— {tTestimonials("adrianoCite")}</cite>
               </blockquote>
             </ScrollReveal>
             <ScrollReveal animation="fadeUp" delay={150}>
               <blockquote className={styles.quote}>
-                <p>
-                  &ldquo;Excellent packaging design with full EU compliance.
-                  Highly recommend.&rdquo;
-                </p>
-                <cite>— Star Food / UB Market</cite>
+                <p>&ldquo;{tTestimonials("starFoodText")}&rdquo;</p>
+                <cite>— {tTestimonials("starFoodCite")}</cite>
               </blockquote>
             </ScrollReveal>
           </div>
