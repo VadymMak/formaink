@@ -1,44 +1,51 @@
-/* ============================================
-   PORTFOLIO PAGE
-   ============================================ */
+/* ─── PAGE HEADER ─────────────────────────────────────────────────────────── */
 
 .pageTitle {
   font-family: var(--font-heading);
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h1);
   font-weight: 700;
+  color: var(--text-primary);
   margin-bottom: 8px;
 }
 
 .pageSubtitle {
-  color: var(--text-secondary);
   font-size: 1.125rem;
+  color: var(--text-secondary);
   margin-bottom: 48px;
 }
 
-/* ====== Project Grid ====== */
-.projectGrid {
+/* ─── CASE LIST ───────────────────────────────────────────────────────────── */
+
+.caseList {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 0;
 }
 
-/* ====== Project Card ====== */
-.projectCard {
+.caseBlock {
+  padding: 40px 0;
+}
+
+/* ─── CASE STUDY ROW ──────────────────────────────────────────────────────── */
+
+.caseStudy {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 32px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
   align-items: center;
 }
 
-.projectCard:nth-child(even) {
+.caseStudyFlipped {
   direction: rtl;
 }
 
-.projectCard:nth-child(even) > * {
+.caseStudyFlipped > * {
   direction: ltr;
 }
 
-.projectImage {
+/* ─── MAIN IMAGE ──────────────────────────────────────────────────────────── */
+
+.caseMainImage {
   position: relative;
   aspect-ratio: 4 / 3;
   border-radius: var(--card-radius);
@@ -46,34 +53,64 @@
   box-shadow: 0 4px 24px rgba(45, 42, 38, 0.12);
 }
 
-.projectImage img {
-  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+/* ─── INFO COLUMN ─────────────────────────────────────────────────────────── */
 
-.projectImage:hover img {
-  transform: scale(1.04);
-}
-
-.projectInfo {
+.caseInfo {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.projectName {
+.caseNumber {
   font-family: var(--font-display);
-  font-size: var(--font-size-case-title);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.caseName {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
 }
 
-.projectCategory {
+.caseCategory {
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+}
+
+.caseDesc {
+  font-size: var(--font-size-body);
+  color: var(--text-secondary);
+  line-height: var(--body-line-height);
+  max-width: 380px;
+}
+
+.caseMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.caseMetaItem {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.caseMetaDot {
+  color: var(--text-muted);
+  font-size: 1rem;
 }
 
 .palette {
@@ -82,20 +119,34 @@
   border-radius: 4px;
   overflow: hidden;
   width: fit-content;
-  margin-top: 4px;
 }
 
 .swatch {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
-/* ====== Gallery (sub-images) ====== */
+.caseLink {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.caseLink:hover {
+  color: var(--accent-hover);
+}
+
+/* ─── GALLERY ROW ─────────────────────────────────────────────────────────── */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .galleryItem {
@@ -104,6 +155,7 @@
   border-radius: var(--card-radius);
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(45, 42, 38, 0.08);
+  background: var(--bg-card);
 }
 
 .galleryItem img {
@@ -114,21 +166,41 @@
   transform: scale(1.04);
 }
 
-/* ====== CTA Block ====== */
-.ctaBlock {
-  margin-top: 80px;
-  text-align: center;
-  padding: 48px 32px;
-  background: var(--bg-card);
+/* Logo items — contain instead of cover, neutral bg */
+.galleryItemLogo {
+  position: relative;
+  aspect-ratio: 4 / 3;
   border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(45, 42, 38, 0.08);
+  background: var(--bg-secondary);
+}
+
+/* ─── DIVIDER ─────────────────────────────────────────────────────────────── */
+
+.caseDivider {
+  height: 1px;
+  background: var(--divider);
+  margin-top: 40px;
+}
+
+/* ─── CTA BLOCK ───────────────────────────────────────────────────────────── */
+
+.ctaBlock {
+  margin-top: 48px;
+  padding: 48px;
+  background: var(--bg-secondary);
+  border-radius: var(--card-radius);
+  text-align: center;
+  border: 1px solid var(--divider);
 }
 
 .ctaText {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .cta {
@@ -149,22 +221,30 @@
   background: var(--accent);
 }
 
-/* ====== Responsive ====== */
-@media (max-width: 768px) {
-  .projectCard {
+/* ─── RESPONSIVE ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .caseStudy,
+  .caseStudyFlipped {
     grid-template-columns: 1fr;
+    direction: ltr;
   }
 
-  .projectCard:nth-child(even) {
+  .caseStudyFlipped > * {
     direction: ltr;
   }
 
   .gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 
   .ctaBlock {
-    margin-top: 48px;
-    padding: 32px 20px;
+    padding: 32px 24px;
   }
 }
