@@ -25,5 +25,11 @@
     "@types/react-dom": "^19.1.0",
     "typescript": "^5.8.0"
   },
-  "packageManager": "pnpm@10.6.0"
+  "packageManager": "pnpm@10.6.0",
+  "browserslist": [
+    "chrome >= 90",
+    "firefox >= 90",
+    "safari >= 15",
+    "edge >= 90"
+  ]
 }
