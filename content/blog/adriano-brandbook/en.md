@@ -15,7 +15,7 @@ tags:
 readTime: "7 min read"
 ---
 
-Most restaurants think about branding when something goes wrong — the new seasonal menu looks nothing like the website, Instagram feels off, the banner outside doesn't match the business card. By then, the visual identity has already fragmented into a dozen inconsistent decisions made by different people at different times.
+Most restaurants think about branding when something goes wrong — the new seasonal menu looks nothing like the website, Instagram feels random, the banner outside doesn't match the business card. By then, the visual identity has already fragmented into dozens of inconsistent decisions made by different people at different times.
 
 A brandbook doesn't fix that retroactively. It prevents it from happening in the first place.
 
@@ -26,72 +26,37 @@ A brandbook doesn't fix that retroactively. It prevents it from happening in the
 - 📄 Scope: **15 pages** — color palette, typography, logo rules, Instagram guidelines
 - 🎯 Client: **Adriano Restaurant & Cafe**, Trenčín (Slovakia) + Vienna (Austria)
 
-## The brief
+## Why did Adriano Restaurant need a brandbook?
 
-Adriano Restaurant & Cafe is a Mediterranean bistro on Námestie sv. Anny 3 in Trenčín, with a second location in Vienna. The menu leans heavily into Adriatic cuisine — lobster, grilled octopus, black risotto, fuži with truffle.
+Adriano Restaurant & Cafe is a Mediterranean bistro on Námestie sv. Anny 3 in Trenčín, with a second location in Vienna. The menu focuses on Adriatic cuisine — lobster, grilled octopus, black risotto, fuži with truffle. The owner came to FormaInk with a specific problem: every time new print materials were needed, the designer had to make basic decisions from scratch. Without documented answers, every project started at zero.
 
-The owner came to FormaInk with a specific frustration: every time they needed new print materials, the designer had to make decisions from scratch. What shade of blue? Which font for prices? Can we use the logo on a dark background? Without documented answers, every project started at zero.
+## What colors does Adriano Restaurant use in their brandbook?
 
-The goal wasn't to redesign the brand — the core identity was already strong. The goal was to capture it in a document that anyone could follow.
-
-## Color system: the Adriatic on paper
-
-The palette is built in three tiers. Primary colors carry 80% of all visual weight:
-
-- **Adriano Black (#000000)** — logo, primary text, high-contrast elements
-- **Deep Adriatic Blue (#0F2B4F)** — menu backgrounds, hero sections, dark surfaces
-- **Light Sea Blue (#A5D6E8)** — menu covers, lighter backgrounds, accents
-- **Pure White (#FFFFFF)** — text on dark backgrounds, breathing space
-
-Accent colors (15% of surfaces): Coral Terracotta (#E07A5F) for seafood illustrations, Warm Gold (#D4AF37) for prices and premium items, Adriano Blue (#3D7CA6) for line illustrations.
-
-Each color in the brandbook comes with a documented function — not just what it is, but where it goes and where it doesn't. That's the difference between a color palette and a color system.
+The palette is built in three tiers. Primary colors carry 80% of all visual weight: Adriano Black (#000000) for logo and primary text, Deep Adriatic Blue (#0F2B4F) for menu backgrounds, Light Sea Blue (#A5D6E8) for covers and accents, Pure White (#FFFFFF) for text on dark backgrounds. Accent colors (15%): Coral Terracotta (#E07A5F) for seafood illustrations, Warm Gold (#D4AF37) for prices, Adriano Blue (#3D7CA6) for line illustrations. Each color has a documented function — not just what it is, but where it goes and where it doesn't.
 
 ![Adriano Restaurant brandbook — color palette](/blog/adriano-brandbook/colors.webp)
 
-## Typography: hierarchy that sells
+## What typography does Adriano Restaurant use in their menu?
 
-Menu typography directly affects ordering behavior. If the price is visually louder than the dish name, guests anchor on price. If the description is more prominent than the category header, navigation breaks down.
+The brandbook establishes 3 typographic levels: **Playfair Display Bold** for section headings and dish names (a classic serif that signals quality), **Lora Medium / Regular** for descriptions and body text (warm, readable), **Playfair Display Bold in Warm Gold (#D4AF37)** exclusively for prices. Gold psychologically communicates premium value and creates a clean visual anchor for the eye. Prohibited combinations are documented explicitly: no more than 2 typefaces per spread, prices never below 16pt, text on colored backgrounds must meet a 4.5:1 contrast ratio.
 
-The brandbook establishes three typographic levels:
+## How many pages does a restaurant brandbook have?
 
-- **Playfair Display Bold** — section headings and dish names. A classic serif that signals quality without being pretentious
-- **Lora Medium / Regular** — descriptions and body text. Warm, readable, doesn't compete with the headings
-- **Playfair Display Bold in Warm Gold (#D4AF37)** — prices only. Gold psychologically communicates premium value
+A standard restaurant brandbook has **15–20 pages**. The Adriano Restaurant brandbook has exactly **15 pages** across 6 sections: color palette, typography, logo rules, menu design, brand positioning, and Instagram guidelines. The physical menu is A4 portrait format, matte paper 300 g/m². Hand-drawn illustrations — lobster, fish, octopus, lemon — appear consistently in defined positions, always in the brandbook's approved color combinations.
 
-Prohibited combinations are documented explicitly: no more than two typefaces per spread, prices never below 16pt, text on colored backgrounds must meet 4.5:1 contrast ratio.
+![Adriano Restaurant menu — typography and layout](/blog/adriano-brandbook/menu.webp)
 
-## Menu design: 15 pages with purpose
+## What is brand positioning and why does a brandbook include it?
 
-The physical menu is A4 portrait, matte paper 300 g/m² with a subtle texture. Each page follows a defined composition grid. The hand-drawn illustrations — lobster, fish, octopus, lemon — appear consistently in defined positions, always in the brandbook's approved color combinations. They're not decorative afterthoughts. They're structural elements that anchor the visual identity across every touchpoint.
-
-![Adriano Restaurant menu typography and layout](/blog/adriano-brandbook/menu.webp)
-
-## Brand positioning
-
-A brandbook without positioning is just an art direction document. The strategic section defines what Adriano actually stands for:
-
-**Brand claim:** _Adriano — the Adriatic, right here in Trenčín_
-
-**Target audience:** Couples aged 30–50 looking for a genuine dining experience. Companies organizing business dinners. Travelers seeking authentic Mediterranean cuisine in Central Europe.
-
-**Differentiator:** Adriano isn't another Italian pizzeria. It's the first genuinely Mediterranean restaurant in Trenčín focused on fresh seafood and Istrian cuisine. Every visual decision should reinforce that position.
+A brandbook without positioning is just a style guide. The strategic section defines what Adriano actually stands for: **Brand claim:** _Adriano — the Adriatic, right here in Trenčín._ **Target audience:** couples aged 30–50 seeking a genuine dining experience, companies organizing business dinners, travelers looking for authentic Mediterranean cuisine in Central Europe. **Differentiator:** Adriano isn't another Italian pizzeria — it's the first genuinely Mediterranean restaurant in Trenčín focused on fresh seafood and Istrian cuisine.
 
 ![Adriano brand mission and positioning](/blog/adriano-brandbook/mission.webp)
 
-## Instagram guidelines
+## What Instagram guidelines does a restaurant brandbook include?
 
-Social media is now part of a restaurant's identity whether you plan for it or not. The brandbook includes a full Instagram section:
+The Adriano brandbook includes a complete Instagram plan: goal of **5,000 followers by end of 2026**, posting frequency of **3× feed posts, 3–4× Reels, daily Stories**, content split of **50% food, 20% atmosphere, 15% Reels, 10% Stories**, feed aesthetic alternating dark and light posts in a 2:1 ratio, required hashtags #AdrianoTrencin #SeafoodTrencin #IstrianFood. Every content type has a template: dimensions, text placement, background color, headline font. The result: even without a dedicated designer, the team can produce visually consistent content.
 
-- **Goal:** 5,000 followers by end of 2026
-- **Posting frequency:** 3× feed posts, 3–4× Reels, daily Stories
-- **Content split:** 50% food, 20% atmosphere, 15% Reels, 10% Stories
-- **Feed aesthetic:** alternating dark and light posts in a 2:1 ratio
-- **Required hashtags:** #AdrianoTrencin #SeafoodTrencin #IstrianFood
-
-Every content type has a template: dimensions, text placement, background color, headline font. The result: even without a dedicated graphic designer, the team can produce visually consistent content.
-
-## Results
+## What were the results of the Adriano brandbook project?
 
 |                   |                                                             |
 | ----------------- | ----------------------------------------------------------- |
@@ -105,22 +70,22 @@ After delivery, the client used the brandbook to brief their next seasonal menu 
 
 ## How much does a restaurant brandbook cost?
 
-A restaurant brandbook typically costs **€450–€1,000** depending on scope. FormaInk's standard brandbook — covering color palette, typography, logo usage, menu guidelines, and Instagram guidelines — is priced at **€450–€600** with a 3-week delivery.
+A restaurant brandbook typically costs **€450–€1,000** depending on scope. FormaInk's standard brandbook — covering color palette, typography, logo usage, menu guidelines, and Instagram guidelines — is priced at **€450–€600** with a 3-week delivery. The price includes both a PDF brandbook and editable Figma source files.
 
-## How long does it take to create a brandbook?
+## How long does it take to create a restaurant brandbook?
 
-Creating a restaurant brandbook takes **2–4 weeks**. For Adriano Restaurant, we delivered a complete 15-page brandbook in **3 weeks**.
+Creating a restaurant brandbook takes **2–4 weeks**. For Adriano Restaurant, FormaInk delivered a complete 15-page brandbook including menu guidelines and Instagram templates in **3 weeks**. The timeline depends on the project scope and the client's feedback turnaround.
 
 ## What does a restaurant brandbook include?
 
-A restaurant brandbook includes: a documented color system with hex codes and usage rules, typography hierarchy for headings and body text, logo usage guidelines with minimum sizes and clear space rules, logo variants for light and dark backgrounds, menu layout guidelines, and Instagram content guidelines.
+A restaurant brandbook includes: a documented color system with hex codes and usage rules, typography hierarchy for headings and body text, logo usage guidelines with minimum sizes and clear space rules, logo variants for light and dark backgrounds, menu layout guidelines, and Instagram content guidelines covering posting frequency, templates, and hashtags.
 
 ## Why does a restaurant need a brandbook?
 
-Without a brandbook, every new design project starts from zero and the visual identity fragments over time. With a brandbook, new materials can be produced **3× faster** and at lower cost. The €450–€600 investment typically pays back within 2–3 design projects.
+Without a brandbook, every new design project starts from zero and the visual identity fragments over time. With a brandbook, new materials can be produced **3× faster** and at lower cost. The €450–€600 investment typically pays back within 2–3 design projects. Adriano Restaurant reduced menu production time from 5 days to 2 after implementing the brandbook.
 
 ## Planning a brandbook for your restaurant?
 
-FormaInk creates complete visual identities for restaurants and hospitality businesses across Slovakia and Central Europe.
+FormaInk creates complete visual identities for restaurants and hospitality businesses across Slovakia, Austria, and Central Europe.
 
 [View our portfolio](/portfolio) or [get in touch](/contact) — we respond within 24 hours.
