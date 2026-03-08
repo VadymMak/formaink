@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
     qualities: [75],
   },
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ["next-intl"],
   },
   async redirects() {
