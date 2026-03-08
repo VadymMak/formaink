@@ -13,6 +13,13 @@
   transform: translateY(0);
 }
 
+.logoImage {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
 .header.scrolled {
   background: var(--bg-primary);
   box-shadow: 0 1px 0 var(--divider);

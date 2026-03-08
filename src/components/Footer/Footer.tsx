@@ -38,12 +38,15 @@ export default function Footer() {
 
         {/* Right: Contact */}
         <div className={styles.contact}>
-          <a href="mailto:hello@formaink.com" className={styles.contactLink}>
-            hello@formaink.com
+          <a
+            href="mailto:trencinreklama@gmail.com"
+            className={styles.contactLink}
+          >
+            trencinreklama@gmail.com
           </a>
           <div className={styles.social}>
             <a
-              href="https://wa.me/421XXXXXXXXX"
+              href="https://wa.me/qr/A3NYYPE55OODK1"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
