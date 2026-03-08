@@ -40,7 +40,7 @@
 
 .tagline {
   font-size: 0.875rem;
-  color: var(--text-muted);
+  color: var(--text-secondary); /* было: text-muted */
   max-width: 240px;
   line-height: 1.5;
 }
@@ -95,7 +95,7 @@
 .socialLink {
   font-size: 0.8125rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--text-secondary); /* было: text-muted */
   text-decoration: none;
   transition: color var(--transition-fast);
 }

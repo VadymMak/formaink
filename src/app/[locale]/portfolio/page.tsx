@@ -50,6 +50,18 @@ const projects: {
     flip: true,
   },
   {
+    slug: "adriano-brandbook",
+    colors: ["#000000", "#0F2B4F", "#A5D6E8", "#E07A5F", "#D4AF37"],
+    mainImage: "/images/portfolio/adriano-brandbook/brandbook-logo.webp",
+    gallery: [
+      "/images/portfolio/adriano-brandbook/brandbook-colors.webp",
+      "/images/portfolio/adriano-brandbook/brandbook-menu.webp",
+      "/images/portfolio/adriano-brandbook/brandbook-mission.webp",
+    ],
+    galleryTypes: ["a4", "a4", "a4"], // ← добавь это
+    flip: false,
+  },
+  {
     slug: "smak",
     colors: ["#C4372A", "#E8C44A", "#4A8EB0", "#8B7355"],
     mainImage: "/images/services/card-smm.webp",
@@ -72,6 +84,11 @@ const galleryAltMap: Record<string, string[]> = {
     "ubMarketGallery2Alt",
     "ubMarketGallery3Alt",
   ],
+  "adriano-brandbook": [
+    "adrianoBrandbookGallery1Alt",
+    "adrianoBrandbookGallery2Alt",
+    "adrianoBrandbookGallery3Alt",
+  ],
   smak: ["smakGallery1Alt"],
   taystra: ["taystraGallery1Alt"],
 };
@@ -79,6 +96,7 @@ const galleryAltMap: Record<string, string[]> = {
 const slugToName: Record<string, string> = {
   adriano: "Adriano",
   "ub-market": "UB Market",
+  "adriano-brandbook": "Adriano Brandbook",
   smak: "S-MAK",
   taystra: "Taystra",
 };
@@ -119,6 +137,13 @@ export default async function PortfolioPage({ params }: Props) {
                   name: "UB Market — Logo & Star Food Labels",
                   description:
                     "Two logos and 5 EU-compliant product labels for sunflower oil line",
+                  creator: { "@type": "Person", name: "Anastasia Kolesnik" },
+                },
+                {
+                  "@type": "CreativeWork",
+                  name: "Adriano Restaurant — Brandbook",
+                  description:
+                    "Complete brand guidelines, color system, typography and Instagram guidelines",
                   creator: { "@type": "Person", name: "Anastasia Kolesnik" },
                 },
               ],
@@ -203,11 +228,16 @@ export default async function PortfolioPage({ params }: Props) {
                   <div className={styles.gallery}>
                     {project.gallery.map((img, gi) => {
                       const isLogo = project.galleryTypes?.[gi] === "logo";
+                      const isA4 = project.galleryTypes?.[gi] === "a4";
                       return (
                         <div
                           key={gi}
                           className={
-                            isLogo ? styles.galleryItemLogo : styles.galleryItem
+                            isLogo
+                              ? styles.galleryItemLogo
+                              : isA4
+                                ? styles.galleryItemA4
+                                : styles.galleryItem
                           }
                         >
                           <Image
@@ -220,7 +250,7 @@ export default async function PortfolioPage({ params }: Props) {
                             sizes="(max-width: 768px) 100vw, 33vw"
                             quality={85}
                             style={{
-                              objectFit: isLogo ? "contain" : "cover",
+                              objectFit: isLogo ? "contain" : "cover", // ← только здесь
                               padding: isLogo ? "32px" : "0",
                             }}
                           />
