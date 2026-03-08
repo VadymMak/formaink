@@ -33,7 +33,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const allMessages = await getMessages();
+  const messages = {
+    nav: (allMessages as any).nav,
+    footer: (allMessages as any).footer,
+    contactForm: (allMessages as any).contactForm,
+    pages: (allMessages as any).pages,
+  };
 
   return (
     <NextIntlClientProvider messages={messages}>
