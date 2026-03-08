@@ -11,7 +11,7 @@ const inter = Inter({
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin", "cyrillic"],
-  weight: ["700", "900"], // только жирные — для заголовков
+  weight: ["400", "600", "700", "900"], // вернуть как было
   variable: "--font-heading",
   display: "swap",
 });
