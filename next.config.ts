@@ -5,7 +5,6 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   images: {
-    minimumCacheTTL: 0,
     qualities: [75, 85],
   },
   experimental: {
