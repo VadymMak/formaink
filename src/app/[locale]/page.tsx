@@ -160,7 +160,6 @@ export default async function HomePage({ params }: Props) {
             {serviceCards.map(({ key, href, image, price }, i) => (
               <ScrollReveal key={key} animation="fadeUp" delay={i * 80}>
                 <Link href={href} className={styles.serviceCard}>
-                  {/* Image — unchanged */}
                   <div className={styles.serviceCardImage}>
                     <Image
                       src={image}
@@ -169,6 +168,8 @@ export default async function HomePage({ params }: Props) {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       quality={85}
                       style={{ objectFit: "cover" }}
+                      priority={i < 2} // ← добавь эту строку
+                      loading={i < 2 ? undefined : "lazy"} // ← и эту
                     />
                   </div>
 
@@ -412,7 +413,7 @@ export default async function HomePage({ params }: Props) {
                 {tCta("button")}
               </Link>
               <a
-                href="https://wa.me/421951813809"
+                href="https://wa.me/qr/A3NYYPE55OODK1"
                 className={styles.btnSecondary}
                 target="_blank"
                 rel="noopener noreferrer"

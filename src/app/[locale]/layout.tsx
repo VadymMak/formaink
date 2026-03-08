@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
+import CookieBannerWrapper from "@/components/ui/CookieBannerWrapper";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
-import CookieBanner from "@/components/ui/CookieBanner";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -59,7 +59,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       </main>
       <Footer />
       <WhatsAppButton />
-      <CookieBanner />
+      <CookieBannerWrapper />
     </NextIntlClientProvider>
   );
 }
