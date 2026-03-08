@@ -154,7 +154,11 @@
       "metaDesc": "Články o dizajne, brandingu a podnikaní",
       "title": "Blog",
       "subtitle": "Články o dizajne, brandingu a tlači",
-      "comingSoon": "Články sa pripravujú..."
+      "comingSoon": "Články sa pripravujú...",
+      "ctaTitle": "Plánujete brandbook pre váš podnik?",
+      "ctaText": "FormaInk tvorí kompletné vizuálne identity pre reštaurácie a firmy na Slovensku a v strednej Európe.",
+      "ctaButton": "Kontaktujte nás",
+      "backToBlog": "Späť na blog"
     },
     "servicesLogos": {
       "metaTitle": "Dizajn loga — FormaInk Trenčín",
