@@ -263,7 +263,7 @@ export default async function HomePage({ params }: Props) {
                     src="/images/portfolio/adriano/labels.webp"
                     alt="Adriano Restaurant — brand identity poster"
                     fill
-                    sizes="(max-width: 768px) 100vw, 25vw"
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     quality={85}
                     style={{ objectFit: "cover" }}
                   />

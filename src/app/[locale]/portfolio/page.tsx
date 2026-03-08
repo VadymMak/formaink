@@ -217,7 +217,7 @@ export default async function PortfolioPage({ params }: Props) {
                                 `${project.slug}Alt`) as any,
                             )}
                             fill
-                            sizes="(max-width: 768px) 100vw, 33vw"
+                            sizes="(max-width: 768px) 50vw, 33vw"
                             quality={85}
                             style={{
                               objectFit: isLogo ? "contain" : "cover",
