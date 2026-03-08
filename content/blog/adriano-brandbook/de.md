@@ -26,72 +26,37 @@ Ein Brandbook korrigiert das nicht nachträglich. Es verhindert, dass es überha
 - 📄 Umfang: **15 Seiten** — Farbpalette, Typografie, Logoregeln, Instagram-Richtlinien
 - 🎯 Auftraggeber: **Adriano Restaurant & Cafe**, Trenčín (Slowakei) + Wien (Österreich)
 
-## Die Aufgabenstellung
+## Warum brauchte das Adriano Restaurant ein Brandbook?
 
-Das Adriano Restaurant & Cafe ist ein mediterranes Bistro am Námestie sv. Anny 3 in Trenčín mit einer zweiten Location in Wien. Die Karte ist auf adriatische Küche ausgerichtet — Hummer, gegrillter Oktopus, schwarzes Risotto, Fuži mit Trüffel.
+Adriano Restaurant & Cafe ist ein mediterranes Bistro am Námestie sv. Anny 3 in Trenčín mit einer zweiten Location in Wien. Die Karte konzentriert sich auf adriatische Küche — Hummer, gegrillter Oktopus, schwarzes Risotto, Fuži mit Trüffel. Der Inhaber wandte sich an FormaInk mit einem konkreten Problem: Bei jeder neuen Drucksache musste der Designer Grundsatzentscheidungen neu treffen. Ohne dokumentierte Antworten begann jedes Projekt wieder bei null.
 
-Der Inhaber wandte sich an FormaInk mit einem konkreten Problem: Bei jedem neuen Druckmaterial musste der Designer Grundsatzentscheidungen neu treffen. Welcher Blauton? Welche Schrift für Preisangaben? Kann das Logo auf dunklem Untergrund verwendet werden? Ohne dokumentierte Antworten begann jedes Projekt wieder bei null.
+## Welche Farben verwendet das Adriano Restaurant in seinem Brandbook?
 
-Das Ziel war keine Neugestaltung der Marke — die Kernidentität war bereits stark. Das Ziel war, sie in einem Dokument festzuhalten, dem jeder Designer folgen kann.
-
-## Farbsystem: die Adria auf Papier
-
-Die Palette ist in drei Ebenen aufgebaut. Primärfarben tragen 80% des visuellen Gewichts:
-
-- **Adriano Black (#000000)** — Logo, Primärtexte, kontrastreiche Elemente
-- **Deep Adriatic Blue (#0F2B4F)** — Speisekartenhintergrund, dunkle Flächen
-- **Light Sea Blue (#A5D6E8)** — Umschläge, hellere Hintergründe, Akzente
-- **Pure White (#FFFFFF)** — Text auf dunklem Untergrund
-
-Akzentfarben (15% der Flächen): Coral Terracotta (#E07A5F) für Meeresfrüchte-Illustrationen, Warm Gold (#D4AF37) für Preisangaben und Premium-Positionen, Adriano Blue (#3D7CA6) für Linienillustrationen.
-
-Jede Farbe ist im Brandbook mit einer dokumentierten Funktion versehen — nicht nur was sie ist, sondern wo sie eingesetzt wird und wo nicht. Das ist der Unterschied zwischen einer Farbpalette und einem Farbsystem.
+Die Palette ist in drei Ebenen aufgebaut. Primärfarben tragen 80 % des visuellen Gewichts: Adriano Black (#000000) für Logo und Primärtexte, Deep Adriatic Blue (#0F2B4F) für Speisekartenhintergründe, Light Sea Blue (#A5D6E8) für Umschläge und Akzente, Pure White (#FFFFFF) für Text auf dunklem Untergrund. Akzentfarben (15 %): Coral Terracotta (#E07A5F) für Meeresfrüchte-Illustrationen, Warm Gold (#D4AF37) für Preisangaben, Adriano Blue (#3D7CA6) für Linienillustrationen. Jede Farbe hat eine dokumentierte Funktion — nicht nur was sie ist, sondern wo sie eingesetzt wird und wo nicht.
 
 ![Adriano Restaurant Brandbook — Farbpalette](/blog/adriano-brandbook/colors.webp)
 
-## Typografie: Hierarchie, die verkauft
+## Welche Typografie verwendet das Adriano Restaurant in der Speisekarte?
 
-Speisekartentypografie beeinflusst das Bestellverhalten direkt. Wenn der Preis visuell lauter ist als der Gerichtname, orientieren sich Gäste am Preis. Wenn die Beschreibung prominenter ist als die Kategorieüberschrift, verliert die Navigation ihre Klarheit.
+Das Brandbook legt 3 typografische Ebenen fest: **Playfair Display Bold** für Abschnittsüberschriften und Gerichtnamen (klassischer Serif, der Qualität signalisiert), **Lora Medium / Regular** für Beschreibungen und Fließtext (warm, gut lesbar), **Playfair Display Bold in Warm Gold (#D4AF37)** ausschließlich für Preise. Gold kommuniziert psychologisch Premiumwert und schafft einen klaren visuellen Ankerpunkt. Verbotene Kombinationen sind explizit dokumentiert: maximal 2 Schriftarten pro Seite, Preise nie kleiner als 16pt, Kontrastverhältnis für Text auf farbigem Untergrund mindestens 4,5:1.
 
-Das Brandbook legt drei typografische Ebenen fest:
+## Wie viele Seiten hat ein Restaurant-Brandbook?
 
-- **Playfair Display Bold** — Abschnittsüberschriften und Gerichtnamen. Ein klassischer Serif, der Qualität signalisiert ohne überheblich zu wirken
-- **Lora Medium / Regular** — Beschreibungen und Fließtext. Warm, gut lesbar, konkurriert nicht mit den Überschriften
-- **Playfair Display Bold in Warm Gold (#D4AF37)** — ausschließlich für Preise. Gold kommuniziert psychologisch Premiumwert
-
-Verbotene Kombinationen sind explizit dokumentiert: maximal zwei Schriftarten pro Seite, Preise nie kleiner als 16pt, Text auf farbigem Untergrund muss das Kontrastverhältnis 4,5:1 erfüllen.
-
-## Speisekarte: 15 Seiten mit Konzept
-
-Die physische Speisekarte ist A4 Hochformat, Mattpapier 300 g/m² mit feiner Struktur. Jede Seite folgt einem definierten Kompositionsraster. Die handgezeichneten Illustrationen — Hummer, Fisch, Oktopus, Zitrone — erscheinen konsequent in festgelegten Positionen, immer in den genehmigten Farbkombinationen des Brandbooks. Sie sind keine dekorativen Nachgedanken, sondern strukturelle Elemente, die die visuelle Identität über alle Berührungspunkte hinweg verankern.
+Ein Standard-Restaurant-Brandbook hat **15–20 Seiten**. Das Adriano-Brandbook umfasst genau **15 Seiten** in 6 Abschnitten: Farbpalette, Typografie, Logoregeln, Speisekarten-Design, Markenpositionierung und Instagram-Richtlinien. Die physische Speisekarte ist A4 Hochformat, Mattpapier 300 g/m². Handgezeichnete Illustrationen — Hummer, Fisch, Oktopus, Zitrone — erscheinen konsequent an festgelegten Positionen in den genehmigten Farbkombinationen.
 
 ![Adriano Restaurant Speisekarte — Typografie und Layout](/blog/adriano-brandbook/menu.webp)
 
-## Markenpositionierung
+## Was ist Markenpositionierung und warum gehört sie ins Brandbook?
 
-Ein Brandbook ohne Positionierung ist nur ein Stilhandbuch. Der strategische Teil definiert, wofür Adriano wirklich steht:
-
-**Brand Claim:** _Adriano — die Adria mitten in Trenčín_
-
-**Zielgruppe:** Paare zwischen 30 und 50, die ein echtes Gastronomieerlebnis suchen, keine Standardküche. Unternehmen, die Business-Dinner veranstalten. Reisende auf der Suche nach authentischer mediterraner Küche in Mitteleuropa.
-
-**Differenzierungsmerkmal:** Adriano ist nicht noch eine italienische Pizzeria. Es ist das erste echte mediterrane Restaurant in Trenčín, das sich auf frische Meeresfrüchte und istrische Küche spezialisiert. Jede visuelle Entscheidung muss diese Position stärken.
+Ein Brandbook ohne Positionierung ist nur ein Stilhandbuch. Der strategische Teil definiert, wofür Adriano wirklich steht: **Brand Claim:** _Adriano — die Adria mitten in Trenčín._ **Zielgruppe:** Paare zwischen 30 und 50, die ein echtes Gastronomieerlebnis suchen, Unternehmen, die Business-Dinner veranstalten, Reisende auf der Suche nach authentischer mediterraner Küche in Mitteleuropa. **Differenzierungsmerkmal:** Adriano ist nicht noch eine italienische Pizzeria — es ist das erste echte mediterrane Restaurant in Trenčín, das sich auf frische Meeresfrüchte und istrische Küche spezialisiert.
 
 ![Adriano Markenmission und Positionierung](/blog/adriano-brandbook/mission.webp)
 
-## Instagram-Richtlinien
+## Welche Instagram-Richtlinien enthält ein Restaurant-Brandbook?
 
-Social Media ist heute Teil der Restaurantidentität — ob man es plant oder nicht. Das Brandbook enthält einen vollständigen Instagram-Abschnitt:
+Das Adriano-Brandbook enthält einen vollständigen Instagram-Plan: Ziel **5.000 Follower bis Ende 2026**, Posting-Frequenz **3× Feed, 3–4× Reels, täglich Stories**, Content-Mix **50 % Speisen, 20 % Atmosphäre, 15 % Reels, 10 % Stories**, Feed-Ästhetik mit abwechselnden dunklen und hellen Beiträgen im Verhältnis 2:1, Pflicht-Hashtags #AdrianoTrencin #SeafoodTrencin #IstrianFood. Jeder Content-Typ hat eine Vorlage: Abmessungen, Textpositionierung, Hintergrundfarbe, Überschriftenformat. Ergebnis: Auch ohne eigenen Grafikdesigner kann das Restaurantteam visuell konsistente Inhalte erstellen.
 
-- **Ziel:** 5.000 Follower bis Ende 2026
-- **Posting-Frequenz:** 3× Feed, 3–4× Reels, täglich Stories
-- **Content-Mix:** 50% Speisen, 20% Atmosphäre, 15% Reels, 10% Stories
-- **Feed-Ästhetik:** Wechsel zwischen dunklen und hellen Beiträgen im Verhältnis 2:1
-- **Pflicht-Hashtags:** #AdrianoTrencin #SeafoodTrencin #IstrianFood
-
-Jeder Content-Typ hat eine Vorlage: Abmessungen, Textpositionierung, Hintergrundfarbe, Überschriftenformat. Das Ergebnis: Auch ohne eigenen Grafikdesigner kann das Restaurantteam visuell konsistente Inhalte erstellen.
-
-## Ergebnis
+## Was waren die Ergebnisse des Adriano-Brandbook-Projekts?
 
 |                |                                                                       |
 | -------------- | --------------------------------------------------------------------- |
@@ -105,19 +70,19 @@ Nach der Übergabe nutzte der Auftraggeber das Brandbook für die nächste Saiso
 
 ## Was kostet ein Brandbook für ein Restaurant?
 
-Ein Restaurant-Brandbook kostet in der Regel **€450–€1.000**, abhängig vom Umfang. Das Standard-Brandbook von FormaInk — Farbpalette, Typografie, Logoregeln, Speisekartenrichtlinien und Instagram-Richtlinien — kostet **€450–€600** bei einer Lieferzeit von 3 Wochen.
+Ein Restaurant-Brandbook kostet in der Regel **€450–€1.000**, abhängig vom Umfang. Das Standard-Brandbook von FormaInk — Farbpalette, Typografie, Logoregeln, Speisekartenrichtlinien und Instagram-Richtlinien — kostet **€450–€600** bei einer Lieferzeit von 3 Wochen. Im Preis enthalten: PDF-Brandbook und bearbeitbare Figma-Quelldateien.
 
-## Wie lange dauert die Erstellung eines Brandbooks?
+## Wie lange dauert die Erstellung eines Restaurant-Brandbooks?
 
-Die Erstellung eines Restaurant-Brandbooks dauert **2–4 Wochen**. Für Adriano Restaurant haben wir ein vollständiges 15-seitiges Brandbook in **3 Wochen** geliefert.
+Die Erstellung eines Restaurant-Brandbooks dauert **2–4 Wochen**. Für Adriano Restaurant lieferte FormaInk ein vollständiges 15-seitiges Brandbook inklusive Speisekarten-Guidelines und Instagram-Vorlagen in **3 Wochen**. Der Zeitplan hängt vom Projektumfang und der Reaktionszeit des Auftraggebers ab.
 
 ## Was enthält ein Restaurant-Brandbook?
 
-Ein Restaurant-Brandbook enthält: ein dokumentiertes Farbsystem mit Hex-Codes und Verwendungsregeln, Typografiehierarchie für Überschriften und Fließtext, Logonutzungsrichtlinien mit Mindestgrößen und Schutzzonenregeln, Logovarianten für helle und dunkle Hintergründe, Speisekarten-Layoutrichtlinien und Instagram-Content-Richtlinien.
+Ein Restaurant-Brandbook enthält: ein dokumentiertes Farbsystem mit Hex-Codes und Verwendungsregeln, Typografiehierarchie für Überschriften und Fließtext, Logonutzungsrichtlinien mit Mindestgrößen und Schutzzonen, Logovarianten für helle und dunkle Hintergründe, Speisekarten-Layoutrichtlinien und Instagram-Content-Richtlinien mit Posting-Frequenz, Vorlagen und Hashtags.
 
 ## Warum braucht ein Restaurant ein Brandbook?
 
-Ohne Brandbook beginnt jedes neue Designprojekt bei null, und die visuelle Identität fragmentiert sich mit der Zeit. Mit einem Brandbook können neue Materialien **3× schneller** und kostengünstiger produziert werden. Die Investition von €450–€600 amortisiert sich typischerweise nach 2–3 Designprojekten.
+Ohne Brandbook beginnt jedes neue Designprojekt bei null und die visuelle Identität fragmentiert sich mit der Zeit. Mit einem Brandbook können neue Materialien **3× schneller** und kostengünstiger produziert werden. Die Investition von €450–€600 amortisiert sich typischerweise nach 2–3 Designprojekten. Adriano Restaurant reduzierte die Produktionszeit für Speisekarten nach Einführung des Brandbooks von 5 auf 2 Tage.
 
 ## Planen Sie ein Brandbook für Ihr Restaurant?
 
