@@ -39,6 +39,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     footer: (allMessages as any).footer,
     contactForm: (allMessages as any).contactForm,
     pages: (allMessages as any).pages,
+    cookieBanner: (allMessages as any).cookieBanner,
   };
 
   return (
