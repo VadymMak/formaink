@@ -113,4 +113,25 @@ export const knowledgeChunks: KnowledgeChunk[] = [
     category: "faq",
     content: `FormaInk works in 6 languages: Slovak, English, German, Czech, Russian, Ukrainian. Design materials can be produced in any language. Menu and print materials in multiple languages available (e.g., Adriano menu in SK + DE). All communication possible in your preferred language.`,
   },
+  // ─── BLOG POSTS ───────────────────────────────────────────────────────────
+  {
+    id: "blog-logo-pricing",
+    category: "blog",
+    content: `Blog post: How much does logo design cost in 2026? Logo basic: €50–€150. Logo + brand guide: €150–€400. Logo + mini identity: €400–€800. Factors that affect price: complexity, number of concepts, file formats, revision rounds. FormaInk includes 2 revision rounds in every logo project. Timeline: 5-7 business days. Available at formaink.com/blog/logo-pricing.`,
+  },
+  {
+    id: "blog-adriano-case",
+    category: "blog",
+    content: `Blog post: Adriano Golfrestaurant branding case study. FormaInk created complete visual identity for Adriano Golfrestaurant in St. Michael im Lungau, Austria — part of the Adriano restaurant network (Trenčín, Slovakia + Austria). Deliverables: 15-page brandbook, menu design (6-panel German), daily menu template, promo flyer, gift certificate (2 variants). Timeline: brandbook 3 weeks, menu 7 days, promo materials 2-3 days. Price range: €450–€800. Result: consistent visual identity across 2 countries. Available at formaink.com/blog/adriano-golfrestaurant-branding.`,
+  },
+  {
+    id: "blog-visual-identity",
+    category: "blog",
+    content: `Blog post: Why every business needs visual identity in 2026. Visual identity includes logo, color palette (CMYK/RGB/HEX values), typography, usage rules, brandbook. Consistent identity increases brand recognition by 80% (Nielsen Norman Group research). Cost: logo + mini brand guide €150–€400, complete Visual Identity Basic €1,500–€3,500, brandbook €450–€1,000, annual support €600–€900/year. Package orders save 15–20% vs individual. Timeline: 14–30 business days. Available at formaink.com/blog/vizualna-identita-2026.`,
+  },
+  {
+    id: "blog-branding-package",
+    category: "blog",
+    content: `Blog post: Complete branding package for small business 2026. Package (menu + cards + banner): €350–€550, saves 15–20%. Brandbook: €450–€1,000. Visual Identity Basic: €1,500–€3,500. Annual support: €600–€900/year. Timeline: 14–21 business days. Available at formaink.com/blog/kompletny-branding-2026.`,
+  },
 ];
