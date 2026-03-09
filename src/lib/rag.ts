@@ -1,4 +1,5 @@
 import { knowledgeChunks, KnowledgeChunk } from "@/data/knowledge";
+import embeddingsData from "@/data/embeddings.json";
 
 // ─── TYPES ───────────────────────────────────────────────────────────────────
 export interface EmbeddedChunk extends KnowledgeChunk {
@@ -45,23 +46,8 @@ export async function searchKnowledge(
   apiKey: string,
   topK = 4,
 ): Promise<KnowledgeChunk[]> {
-  // Load pre-generated embeddings
-  let embeddedChunks: EmbeddedChunk[];
-  try {
-    // Dynamic import of the JSON file
-    const mod = await import("@/data/embeddings.json");
-    embeddedChunks = mod.default as EmbeddedChunk[];
-  } catch {
-    // Fallback: return top chunks by keyword match if embeddings not generated yet
-    const q = query.toLowerCase();
-    return knowledgeChunks
-      .filter(
-        (c) =>
-          c.content.toLowerCase().includes(q) ||
-          c.category.toLowerCase().includes(q),
-      )
-      .slice(0, topK);
-  }
+  // Static import — works in Next.js App Router
+  const embeddedChunks = embeddingsData as EmbeddedChunk[];
 
   // Get query embedding
   const queryEmbedding = await getEmbedding(query, apiKey);
