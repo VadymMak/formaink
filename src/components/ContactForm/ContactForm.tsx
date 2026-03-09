@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import styles from "./ContactForm.module.css";
 
 type Status = "idle" | "sending" | "success" | "error";
@@ -13,6 +13,7 @@ type Props = {
 
 export default function ContactForm({ presetService, presetLabel }: Props) {
   const t = useTranslations("contactForm");
+  const locale = useLocale();
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -21,13 +22,11 @@ export default function ContactForm({ presetService, presetLabel }: Props) {
     const name = form.get("name") as string;
     const email = form.get("email") as string;
     const message = form.get("message") as string;
-
     if (!name || name.trim().length < 2) errs.name = t("errorName");
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
       errs.email = t("errorEmail");
     if (!message || message.trim().length < 10)
       errs.message = t("errorMessage");
-
     return errs;
   };
 
@@ -35,15 +34,12 @@ export default function ContactForm({ presetService, presetLabel }: Props) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const validationErrors = validate(form);
-
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
-
     setErrors({});
     setStatus("sending");
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -53,9 +49,10 @@ export default function ContactForm({ presetService, presetLabel }: Props) {
           email: form.get("email"),
           projectType: presetService ?? form.get("projectType"),
           message: form.get("message"),
+          honeypot: form.get("website"),
+          locale,
         }),
       });
-
       if (res.ok) {
         setStatus("success");
         (e.target as HTMLFormElement).reset();
@@ -82,6 +79,11 @@ export default function ContactForm({ presetService, presetLabel }: Props) {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form} noValidate>
+      {/* Honeypot — hidden from humans, bots fill it */}
+      <div style={{ display: "none" }} aria-hidden="true">
+        <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
+
       <div className={styles.field}>
         <label htmlFor="name" className={styles.label}>
           {t("name")}
@@ -110,7 +112,6 @@ export default function ContactForm({ presetService, presetLabel }: Props) {
         {errors.email && <p className={styles.error}>{errors.email}</p>}
       </div>
 
-      {/* Show preset tag OR select dropdown */}
       {presetService ? (
         <div className={styles.field}>
           <label className={styles.label}>{t("projectType")}</label>
