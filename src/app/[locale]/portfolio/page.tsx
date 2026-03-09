@@ -113,6 +113,7 @@ const slugToName: Record<string, string> = {
 const fallbacks: Record<string, Record<string, Record<string, string>>> = {
   outdoor: {
     sk: {
+      outdoorName: "Vonkajšia reklama",
       outdoorAlt: "Vonkajšia reklama — billboard a polep auta Trenčín",
       outdoorCategory: "Billboard · Polep auta · Vonkajšia reklama",
       outdoorDesc:
@@ -127,6 +128,7 @@ const fallbacks: Record<string, Record<string, Record<string, string>>> = {
         "Taxi Trenčín — nálepka na okno s kontaktmi a QR kódom",
     },
     en: {
+      outdoorName: "Outdoor advertising",
       outdoorAlt: "Outdoor advertising — billboard and car wrap Trenčín",
       outdoorCategory: "Billboard · Car wrap · Outdoor advertising",
       outdoorDesc:
@@ -140,6 +142,7 @@ const fallbacks: Record<string, Record<string, Record<string, string>>> = {
         "Taxi Trenčín — window sticker with contacts and QR code",
     },
     de: {
+      outdoorName: "Außenwerbung",
       outdoorAlt: "Außenwerbung — Billboard und Autofolierung Trenčín",
       outdoorCategory: "Billboard · Autofolierung · Außenwerbung",
       outdoorDesc:
@@ -151,6 +154,7 @@ const fallbacks: Record<string, Record<string, Record<string, string>>> = {
       outdoorGallery3Alt: "Taxi Trenčín — Fensteraufkleber mit QR-Code",
     },
     cs: {
+      outdoorName: "Venkovní reklama",
       outdoorAlt: "Venkovní reklama — billboard a polep auta Trenčín",
       outdoorCategory: "Billboard · Polep auta · Venkovní reklama",
       outdoorDesc:
@@ -162,6 +166,7 @@ const fallbacks: Record<string, Record<string, Record<string, string>>> = {
       outdoorGallery3Alt: "Taxi Trenčín — nálepka na okno s QR kódem",
     },
     ru: {
+      outdoorName: "Наружная реклама",
       outdoorAlt: "Наружная реклама — билборд и оклейка авто Тренчин",
       outdoorCategory: "Билборд · Оклейка авто · Наружная реклама",
       outdoorDesc:
@@ -173,6 +178,7 @@ const fallbacks: Record<string, Record<string, Record<string, string>>> = {
       outdoorGallery3Alt: "Taxi Trenčín — наклейка на окно с QR-кодом",
     },
     ua: {
+      outdoorName: "Зовнішня реклама",
       outdoorAlt: "Зовнішня реклама — білборд та оклейка авто Тренчін",
       outdoorCategory: "Білборд · Оклейка авто · Зовнішня реклама",
       outdoorDesc:
@@ -250,14 +256,13 @@ export default async function PortfolioPage({ params }: Props) {
   const lang = locale as "sk" | "en" | "de" | "cs" | "ru" | "ua";
 
   const tSafe = (key: string, slug: string): string => {
-    // Check fallbacks first for new slugs
     const fb = fallbacks[slug]?.[lang]?.[key] ?? fallbacks[slug]?.["en"]?.[key];
     if (fb) return fb;
     try {
-      return t(key as any);
-    } catch {
-      return key;
-    }
+      const val = t(key as any);
+      if (typeof val === "string" && !val.includes(".")) return val;
+    } catch {}
+    return key.endsWith("Name") ? (slugToName[slug] ?? slug) : key;
   };
 
   return (
@@ -340,7 +345,7 @@ export default async function PortfolioPage({ params }: Props) {
                   <div className={styles.caseInfo}>
                     <span className={styles.caseNumber}>0{i + 1}</span>
                     <h2 className={styles.caseName}>
-                      {slugToName[project.slug]}
+                      {tSafe(`${project.slug}Name`, project.slug)}
                     </h2>
                     <p className={styles.caseCategory}>
                       {tSafe(`${project.slug}Category`, project.slug)}
