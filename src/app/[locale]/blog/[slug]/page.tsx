@@ -20,6 +20,15 @@ interface PageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
 
+// Converts "2026-03-01" → "2026-03-01T00:00:00+01:00"
+// Central European Time (CET) — Slovakia/EU timezone
+function toEUDate(date: string): string {
+  if (!date) return date;
+  // If already has time component — return as-is
+  if (date.includes("T")) return date;
+  return `${date}T00:00:00+01:00`;
+}
+
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
@@ -56,7 +65,7 @@ export async function generateMetadata({
         ? [{ url: ogImage, width: 1200, height: 630, alt: post.title }]
         : [],
       type: "article",
-      publishedTime: post.date,
+      publishedTime: toEUDate(post.date),
       authors: ["Anastasia Kolesnik"],
       tags: post.tags,
     },
@@ -123,8 +132,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     headline: post.title,
     description: post.description,
     image: `${BASE_URL}${post.coverOg || post.cover}`,
-    datePublished: post.date,
-    dateModified: post.date,
+    datePublished: toEUDate(post.date),
+    dateModified: toEUDate(post.date),
     inLanguage: langCode,
     keywords: post.tags.join(", "),
     author: {
