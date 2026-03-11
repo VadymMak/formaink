@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import ContactForm from "@/components/ContactForm/ContactForm";
 import styles from "../services.module.css";
+import { serviceFaqs, type Locale } from "@/data/serviceFaqs";
 
 type Props = { params: Promise<{ locale: string }> };
 const BASE_URL = "https://formaink.com";
@@ -54,7 +55,10 @@ export default async function RestaurantServicePage({ params }: Props) {
     namespace: "pages.servicesRestaurant",
   });
 
-  const jsonLd = {
+  const faqs =
+    serviceFaqs.restaurant[locale as Locale] ?? serviceFaqs.restaurant.sk;
+
+  const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: t("metaTitle"),
@@ -106,11 +110,25 @@ export default async function RestaurantServicePage({ params }: Props) {
     ],
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <section className="section">
         <div className="container">
@@ -197,7 +215,6 @@ export default async function RestaurantServicePage({ params }: Props) {
                   <p className={styles.pricingDeadline}>{t("p4Deadline")}</p>
                 </div>
 
-                {/* Full package — featured */}
                 <div
                   className={`${styles.pricingCard} ${styles.pricingCardFeatured}`}
                 >
@@ -230,7 +247,22 @@ export default async function RestaurantServicePage({ params }: Props) {
             </div>
           </ScrollReveal>
 
+          {/* ── FAQ SECTION ─────────────────────────────────────────────── */}
           <ScrollReveal animation="fadeUp" delay={180}>
+            <div className={styles.faqSection}>
+              <h2 className={styles.faqTitle}>{t("faqTitle")}</h2>
+              <dl className={styles.faqList}>
+                {faqs.map((faq, index) => (
+                  <div key={index} className={styles.faqItem}>
+                    <dt className={styles.faqQuestion}>{faq.question}</dt>
+                    <dd className={styles.faqAnswer}>{faq.answer}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal animation="fadeUp" delay={220}>
             <div id="contact-form">
               <ContactForm
                 presetService="restaurant"

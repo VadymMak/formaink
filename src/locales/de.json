@@ -191,7 +191,8 @@
       "logo3Deadline": "Lieferung: 7–10 Werktage",
       "brandbookBanner": "Brauchen Sie nur ein Brandbook?",
       "brandbookBannerDesc": "Visuelle Identität, Verwendungsregeln, Vorlagen — ab €450",
-      "brandbookBannerCta": "Nach Brandbook anfragen"
+      "brandbookBannerCta": "Nach Brandbook anfragen",
+      "faqTitle": "Häufig gestellte Fragen"
     },
     "servicesDesign": {
       "metaTitle": "Logo-Design & Corporate Identity — FormaInk Trenčín",
@@ -266,7 +267,8 @@
       "brand3Deadline": "Lieferung: 30–45 Werktage",
       "cta": "Design bestellen",
       "formTitle": "Design bestellen",
-      "formSubtitle": "Beschreiben Sie Ihr Projekt — wir antworten innerhalb von 24 Stunden."
+      "formSubtitle": "Beschreiben Sie Ihr Projekt — wir antworten innerhalb von 24 Stunden.",
+      "faqTitle": "Häufig gestellte Fragen"
     },
     "servicesPrint": {
       "metaTitle": "Druckgrafik Design — FormaInk Trenčín",
@@ -326,7 +328,8 @@
       "p6Deadline": "Lieferung: 2–3 Werktage",
       "cta": "Design bestellen",
       "formTitle": "Druckdesign bestellen",
-      "formSubtitle": "Beschreiben Sie Ihren Bedarf — wir antworten innerhalb von 24 Stunden."
+      "formSubtitle": "Beschreiben Sie Ihren Bedarf — wir antworten innerhalb von 24 Stunden.",
+      "faqTitle": "Häufig gestellte Fragen"
     },
     "servicesRestaurant": {
       "metaTitle": "Restaurant & Café Design — FormaInk Trenčín",
@@ -390,7 +393,8 @@
       "p6Deadline": "Gültig: 12 Monate ab Unterzeichnung",
       "cta": "Design bestellen",
       "formTitle": "Restaurant-Design bestellen",
-      "formSubtitle": "Beschreiben Sie Ihr Lokal und Ihre Anforderungen — wir antworten innerhalb von 24 Stunden."
+      "formSubtitle": "Beschreiben Sie Ihr Lokal und Ihre Anforderungen — wir antworten innerhalb von 24 Stunden.",
+      "faqTitle": "Häufig gestellte Fragen"
     },
     "servicesSMM": {
       "metaTitle": "Social-Media-Management & Instagram — FormaInk Trenčín",
@@ -454,7 +458,8 @@
       "p6Deadline": "Monatliches Abonnement",
       "cta": "SMM bestellen",
       "formTitle": "Social-Media-Management bestellen",
-      "formSubtitle": "Beschreiben Sie Ihr Profil und Ihre Ziele — wir antworten innerhalb von 24 Stunden."
+      "formSubtitle": "Beschreiben Sie Ihr Profil und Ihre Ziele — wir antworten innerhalb von 24 Stunden.",
+      "faqTitle": "Häufig gestellte Fragen"
     },
     "services": {
       "metaTitle": "Leistungen — FormaInk Trenčín",

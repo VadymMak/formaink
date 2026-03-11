@@ -191,7 +191,8 @@
       "logo3Deadline": "Delivery: 7–10 working days",
       "brandbookBanner": "Need only a brandbook?",
       "brandbookBannerDesc": "Visual identity, usage rules, templates — from €450",
-      "brandbookBannerCta": "Ask about brandbook"
+      "brandbookBannerCta": "Ask about brandbook",
+      "faqTitle": "Frequently Asked Questions"
     },
     "servicesDesign": {
       "metaTitle": "Logo Design & Brand Identity — FormaInk Trenčín",
@@ -266,7 +267,8 @@
       "brand3Deadline": "Delivery: 30–45 working days",
       "cta": "Order Design",
       "formTitle": "Order Design",
-      "formSubtitle": "Describe your project — we reply within 24 hours."
+      "formSubtitle": "Describe your project — we reply within 24 hours.",
+      "faqTitle": "Frequently Asked Questions"
     },
     "servicesPrint": {
       "metaTitle": "Print Graphic Design — FormaInk Trenčín",
@@ -326,7 +328,8 @@
       "p6Deadline": "Delivery: 2–3 working days",
       "cta": "Order Design",
       "formTitle": "Order Print Design",
-      "formSubtitle": "Describe what you need — we reply within 24 hours."
+      "formSubtitle": "Describe what you need — we reply within 24 hours.",
+      "faqTitle": "Frequently Asked Questions"
     },
     "servicesRestaurant": {
       "metaTitle": "Restaurant & Café Design — FormaInk Trenčín",
@@ -390,7 +393,8 @@
       "p6Deadline": "Valid: 12 months from signing",
       "cta": "Order Design",
       "formTitle": "Order Restaurant Design",
-      "formSubtitle": "Describe your venue and needs — we reply within 24 hours."
+      "formSubtitle": "Describe your venue and needs — we reply within 24 hours.",
+      "faqTitle": "Frequently Asked Questions"
     },
     "servicesSMM": {
       "metaTitle": "Social Media Management & Instagram — FormaInk Trenčín",
@@ -454,7 +458,8 @@
       "p6Deadline": "Monthly subscription",
       "cta": "Order SMM",
       "formTitle": "Order Social Media Management",
-      "formSubtitle": "Describe your profile and goals — we reply within 24 hours."
+      "formSubtitle": "Describe your profile and goals — we reply within 24 hours.",
+      "faqTitle": "Frequently Asked Questions"
     },
     "services": {
       "metaTitle": "Services — FormaInk Trenčín",
