@@ -202,6 +202,68 @@
   letter-spacing: 0.04em;
 }
 
+/* ── FAQ SECTION ──────────────────────────────────────────────────────────
+   Add these styles to services.module.css
+   ───────────────────────────────────────────────────────────────────────── */
+
+.faqSection {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.faqTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: var(--color-text);
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faqItem {
+  border-top: 1px solid var(--color-border, #e5e5e5);
+  padding: 24px 0;
+}
+
+.faqItem:last-child {
+  border-bottom: 1px solid var(--color-border, #e5e5e5);
+}
+
+.faqQuestion {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.faqAnswer {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary, #555);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 720px;
+}
+
+@media (max-width: 768px) {
+  .faqSection {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .faqTitle {
+    font-size: 1.5rem;
+  }
+
+  .faqItem {
+    padding: 20px 0;
+  }
+}
+
 /* ─── BRANDBOOK BANNER ────────────────────────────────────────────────────── */
 
 .brandbookBanner {

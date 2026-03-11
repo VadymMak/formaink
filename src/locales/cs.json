@@ -191,7 +191,8 @@
       "logo3Deadline": "Termín: 7–10 prac. dní",
       "brandbookBanner": "Potřebujete pouze brandbook?",
       "brandbookBannerDesc": "Vizuální identita, pravidla použití, šablony — od €450",
-      "brandbookBannerCta": "Napsat o brandbooku"
+      "brandbookBannerCta": "Napsat o brandbooku",
+      "faqTitle": "Často kladené otázky"
     },
     "servicesDesign": {
       "metaTitle": "Design loga a firemní identita — FormaInk Trenčín",
@@ -266,7 +267,8 @@
       "brand3Deadline": "Termín: 30–45 prac. dní",
       "cta": "Objednat design",
       "formTitle": "Objednat design",
-      "formSubtitle": "Popište váš projekt — odpovíme do 24 hodin."
+      "formSubtitle": "Popište váš projekt — odpovíme do 24 hodin.",
+      "faqTitle": "Často kladené otázky"
     },
     "servicesPrint": {
       "metaTitle": "Grafický design tiskovin — FormaInk Trenčín",
@@ -326,7 +328,8 @@
       "p6Deadline": "Termín: 2–3 prac. dny",
       "cta": "Objednat design",
       "formTitle": "Objednat design tiskovin",
-      "formSubtitle": "Popište co potřebujete — odpovíme do 24 hodin."
+      "formSubtitle": "Popište co potřebujete — odpovíme do 24 hodin.",
+      "faqTitle": "Často kladené otázky"
     },
     "servicesRestaurant": {
       "metaTitle": "Design pro restaurace a kavárny — FormaInk Trenčín",
@@ -390,7 +393,8 @@
       "p6Deadline": "Platnost: 12 měsíců od podpisu",
       "cta": "Objednat design",
       "formTitle": "Objednat design pro restauraci",
-      "formSubtitle": "Popište váš podnik a co potřebujete — odpovíme do 24 hodin."
+      "formSubtitle": "Popište váš podnik a co potřebujete — odpovíme do 24 hodin.",
+      "faqTitle": "Často kladené otázky"
     },
     "servicesSMM": {
       "metaTitle": "Správa sociálních sítí a Instagram — FormaInk Trenčín",
@@ -454,7 +458,8 @@
       "p6Deadline": "Měsíční předplatné",
       "cta": "Objednat SMM",
       "formTitle": "Objednat správu sociálních sítí",
-      "formSubtitle": "Popište svůj profil a cíle — odpovíme do 24 hodin."
+      "formSubtitle": "Popište svůj profil a cíle — odpovíme do 24 hodin.",
+      "faqTitle": "Často kladené otázky"
     },
     "services": {
       "metaTitle": "Služby — FormaInk Trenčín",
