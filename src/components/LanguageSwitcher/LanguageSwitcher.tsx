@@ -15,22 +15,29 @@ const localeLabels: Record<string, string> = {
   ua: "UA",
 };
 
-export default function LanguageSwitcher() {
+interface Props {
+  inline?: boolean; // renders all locales as flat buttons — use in mobile overlay
+}
+
+export default function LanguageSwitcher({ inline = false }: Props) {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  // Close on outside click
   useEffect(() => {
-    const handler = (e: MouseEvent) => {
+    const handler = (e: MouseEvent | TouchEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         setOpen(false);
       }
     };
     document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler);
+    return () => {
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
+    };
   }, []);
 
   const switchLocale = (newLocale: string) => {
@@ -38,6 +45,24 @@ export default function LanguageSwitcher() {
     setOpen(false);
   };
 
+  // ── Inline mode: flat row of buttons for mobile overlay ──────────────────
+  if (inline) {
+    return (
+      <div className={styles.inlineWrapper}>
+        {routing.locales.map((loc) => (
+          <button
+            key={loc}
+            className={`${styles.inlineOption} ${loc === locale ? styles.inlineOptionActive : ""}`}
+            onClick={() => switchLocale(loc)}
+          >
+            {localeLabels[loc]}
+          </button>
+        ))}
+      </div>
+    );
+  }
+
+  // ── Default: dropdown for desktop ────────────────────────────────────────
   return (
     <div className={styles.wrapper} ref={ref}>
       <button

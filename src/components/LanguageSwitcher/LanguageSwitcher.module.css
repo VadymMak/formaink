@@ -76,3 +76,40 @@
   color: var(--accent);
   font-weight: 600;
 }
+
+/* ── Inline mode (mobile overlay) ────────────────────────────────────────── */
+
+.inlineWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.inlineOption {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--divider);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.inlineOption:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.inlineOptionActive {
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 700;
+}

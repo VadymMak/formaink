@@ -26,10 +26,8 @@ export default function Header() {
       if (currentY < threshold) {
         setVisible(true);
       } else if (currentY > lastScrollY.current + 5) {
-        // Scrolling down
         setVisible(false);
       } else if (currentY < lastScrollY.current - 5) {
-        // Scrolling up
         setVisible(true);
       }
 
@@ -110,9 +108,16 @@ export default function Header() {
           </button>
         </div>
       </header>
+
       <div
         className={`${styles.overlay} ${mobileOpen ? styles.overlayOpen : ""}`}
       >
+        {/* Language + theme controls at the TOP of mobile menu */}
+        <div className={styles.overlayActions}>
+          <ThemeToggle />
+          <LanguageSwitcher inline />
+        </div>
+
         <nav className={styles.overlayNav}>
           {navLinks.map(({ href, label }) => (
             <Link
@@ -125,10 +130,6 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <div className={styles.overlayActions}>
-          <ThemeToggle />
-          <LanguageSwitcher />
-        </div>
       </div>
     </>
   );
