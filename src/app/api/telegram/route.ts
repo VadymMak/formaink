@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { collectAndFormatSEOReport } from "@/lib/seo-stats";
 import { sendTelegramMessage } from "@/lib/telegram";
-
+// This route serves as the Telegram bot webhook endpoint and also handles the /fi command for on-demand SEO reports.
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -13,14 +13,13 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: true });
     }
 
-    if (text === "/report" || text.startsWith("/report@")) {
-      // Fire and forget — Telegram expects fast response
+    if (text === "/fi" || text.startsWith("/fi@")) {
       (async () => {
         try {
           const report = await collectAndFormatSEOReport();
           await sendTelegramMessage(report);
         } catch (err) {
-          console.error("Telegram /report error:", err);
+          console.error("Telegram /fi error:", err);
           await sendTelegramMessage(
             "⚠️ <b>[FormaInk]</b> SEO report failed. Check Vercel logs.",
           );
@@ -31,6 +30,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("Telegram webhook error:", err);
-    return NextResponse.json({ ok: true }); // Always return 200 to Telegram
+    return NextResponse.json({ ok: true });
   }
 }
