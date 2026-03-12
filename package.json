@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "jose": "^6.2.1",
     "next": "^15.3.0",
     "next-intl": "^4.1.0",
     "react": "^19.1.0",
