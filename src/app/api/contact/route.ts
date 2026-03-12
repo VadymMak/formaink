@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { searchKnowledge, buildContext } from "@/lib/rag";
+import {
+  sendTelegramMessage,
+  formatFormNotification,
+  formatAutoReplyNotification,
+} from "@/lib/telegram";
 
 // ─── RATE LIMITING ──────────────────────────────────────────────────────────
 const rateLimit = new Map<string, { count: number; resetAt: number }>();
@@ -21,7 +25,7 @@ function checkRateLimit(ip: string): boolean {
 // ─── TYPES ──────────────────────────────────────────────────────────────────
 type Locale = "sk" | "en" | "de" | "cs" | "ru" | "ua";
 
-// ─── SYSTEM PROMPTS ──────────────────────────────────────────────────────────
+// ─── SYSTEM PROMPTS ─────────────────────────────────────────────────────────
 const systemPrompts: Record<Locale, string> = {
   sk: `Si Anastasia Kolesnik, majiteľka grafického štúdia FormaInk v Trenčíne, Slovensko.
 Píšeš osobnú odpoveď klientovi, ktorý kontaktoval štúdio cez web.
@@ -30,8 +34,8 @@ Máš k dispozícii informácie o štúdiu, službách a cenách.
 Pravidlá:
 - Píš v slovenčine, priateľsky a profesionálne
 - Reaguj priamo na obsah správy klienta
-- Môžeš uvádzať orientačné ceny z knowledge base (napr. "od €150")
-- Nikdy neslubuj konkrétnu cenu bez konzultácie
+- Môžeš uvádzať orientačné ceny (napr. "od €150")
+- Nikdy nesľubuj konkrétnu cenu bez konzultácie
 - Pozvi klienta na bezplatnú konzultáciu alebo hovor
 - Spomeň relevantné portfólio ak sa hodí
 - Podpíš sa ako Anastasia z FormaInk
@@ -39,21 +43,18 @@ Pravidlá:
 
   en: `You are Anastasia Kolesnik, owner of FormaInk graphic design studio in Trenčín, Slovakia.
 You are writing a personal reply to a client who contacted the studio via website.
-You have information about the studio, services and pricing.
 
 Rules:
 - Write in English, friendly and professional tone
 - Respond directly to the client's message content
-- You can mention approximate prices from knowledge base (e.g. "starting from €150")
+- You can mention approximate prices (e.g. "starting from €150")
 - Never promise a specific price without a consultation
 - Invite the client for a free consultation or call
-- Mention relevant portfolio work if appropriate
 - Sign as Anastasia from FormaInk
 - Max 6 sentences, natural tone, no bullet lists`,
 
   de: `Du bist Anastasia Kolesnik, Inhaberin des Grafikstudios FormaInk in Trenčín, Slowakei.
 Du schreibst eine persönliche Antwort an einen Kunden, der das Studio über die Website kontaktiert hat.
-Du hast Informationen über das Studio, Dienstleistungen und Preise.
 
 Regeln:
 - Schreibe auf Deutsch, freundlich und professionell
@@ -61,13 +62,11 @@ Regeln:
 - Du kannst ungefähre Preise nennen (z.B. "ab €150")
 - Versprich nie einen genauen Preis ohne Beratung
 - Lade den Kunden zu einem kostenlosen Beratungsgespräch ein
-- Erwähne relevante Portfolio-Arbeiten falls passend
 - Unterzeichne als Anastasia von FormaInk
 - Max 6 Sätze, natürlicher Ton, keine Listen`,
 
   cs: `Jsi Anastasia Kolesnik, majitelka grafického studia FormaInk v Trenčíně, Slovensko.
 Píšeš osobní odpověď klientovi, který kontaktoval studio přes web.
-Máš k dispozici informace o studiu, službách a cenách.
 
 Pravidla:
 - Piš česky, přátelsky a profesionálně
@@ -75,13 +74,11 @@ Pravidla:
 - Můžeš uvádět orientační ceny (např. "od €150")
 - Nikdy neslib konkrétní cenu bez konzultace
 - Pozvi klienta na bezplatnou konzultaci
-- Zmiň relevantní portfolio pokud se hodí
 - Podpiš se jako Anastasia z FormaInk
 - Max 6 vět, přirozený tón, bez seznamů`,
 
   ru: `Ты Анастасия Колесник, владелица дизайн-студии FormaInk в Тренчине, Словакия.
 Пишешь личный ответ клиенту, который обратился в студию через сайт.
-У тебя есть информация о студии, услугах и ценах.
 
 Правила:
 - Пиши по-русски, дружелюбно и профессионально
@@ -89,13 +86,11 @@ Pravidla:
 - Можно упоминать ориентировочные цены (например, "от €150")
 - Никогда не обещай конкретную цену без консультации
 - Пригласи клиента на бесплатную консультацию
-- Упомяни релевантные работы из портфолио если уместно
 - Подпишись как Анастасия из FormaInk
 - Максимум 6 предложений, естественный тон, без списков`,
 
   ua: `Ти Анастасія Колесник, власниця дизайн-студії FormaInk у Тренчині, Словаччина.
 Пишеш особисту відповідь клієнту, який звернувся до студії через сайт.
-У тебе є інформація про студію, послуги та ціни.
 
 Правила:
 - Пиши українською, дружньо та професійно
@@ -103,12 +98,11 @@ Pravidla:
 - Можна згадувати орієнтовні ціни (наприклад, "від €150")
 - Ніколи не обіцяй конкретну ціну без консультації
 - Запроси клієнта на безкоштовну консультацію
-- Згадай релевантне портфоліо якщо доречно
 - Підпишись як Анастасія з FormaInk
 - Максимум 6 речень, природний тон, без списків`,
 };
 
-// ─── STATIC SUBJECT LINES ───────────────────────────────────────────────────
+// ─── SUBJECT LINES ──────────────────────────────────────────────────────────
 const subjects: Record<Locale, (n: string) => string> = {
   sk: (n) => `Ďakujeme za správu, ${n}! — FormaInk`,
   en: (n) => `Thank you for your message, ${n}! — FormaInk`,
@@ -153,17 +147,9 @@ async function generateAIReply(
   locale: Locale,
   apiKey: string,
 ): Promise<string> {
-  // Get relevant knowledge chunks via RAG
-  const query = `${projectType} ${message}`;
-  const chunks = await searchKnowledge(query, apiKey, 4);
-  const context = buildContext(chunks);
-
   const userMessage = `Klient: ${name}
 Typ projektu: ${projectType || "nie je uvedený"}
-Správa: ${message}
-
-Relevantné informácie o štúdiu:
-${context}`;
+Správa: ${message}`;
 
   const res = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -187,12 +173,13 @@ ${context}`;
   return data.choices?.[0]?.message?.content?.trim() ?? "";
 }
 
-// ─── EMAIL TEMPLATES ────────────────────────────────────────────────────────
+// ─── EMAIL: NOTIFICATION TO ANASTASIA ───────────────────────────────────────
 function buildNotificationEmail(
   name: string,
   email: string,
   projectType: string,
   message: string,
+  budget: string,
   locale: string,
 ): string {
   return `<!DOCTYPE html><html><head><meta charset="utf-8"></head>
@@ -213,6 +200,8 @@ function buildNotificationEmail(
           <td style="padding:12px 0;border-bottom:1px solid #F0EBE3;"><a href="mailto:${email}" style="color:#8B3A2A;font-size:16px;">${email}</a></td></tr>
       <tr><td style="padding:12px 0;border-bottom:1px solid #F0EBE3;font-size:12px;font-weight:700;color:#8B7355;letter-spacing:0.1em;text-transform:uppercase;">Projekt</td>
           <td style="padding:12px 0;border-bottom:1px solid #F0EBE3;font-size:16px;color:#2D2A26;">${projectType || "—"}</td></tr>
+      <tr><td style="padding:12px 0;border-bottom:1px solid #F0EBE3;font-size:12px;font-weight:700;color:#8B7355;letter-spacing:0.1em;text-transform:uppercase;">Rozpočet</td>
+          <td style="padding:12px 0;border-bottom:1px solid #F0EBE3;font-size:16px;color:#2D2A26;">${budget || "—"}</td></tr>
       <tr><td style="padding:12px 0;font-size:12px;font-weight:700;color:#8B7355;letter-spacing:0.1em;text-transform:uppercase;">Jazyk</td>
           <td style="padding:12px 0;font-size:16px;color:#2D2A26;">${locale.toUpperCase()}</td></tr>
     </table>
@@ -232,6 +221,7 @@ function buildNotificationEmail(
 </body></html>`;
 }
 
+// ─── EMAIL: AUTO-REPLY TO CLIENT ─────────────────────────────────────────────
 function buildAutoReplyEmail(
   name: string,
   projectType: string,
@@ -242,7 +232,6 @@ function buildAutoReplyEmail(
   const portfolioLabel = portfolioLabels[locale];
   const noReply = noReplyTexts[locale];
 
-  // Convert AI plain text paragraphs to HTML
   const bodyHtml = aiBodyText
     .split("\n")
     .filter((l) => l.trim())
@@ -270,9 +259,7 @@ function buildAutoReplyEmail(
     </div>`
         : ""
     }
-    
     ${bodyHtml}
-
     <table cellpadding="0" cellspacing="0" style="margin-top:28px;">
       <tr>
         <td style="padding-right:8px;">
@@ -283,7 +270,6 @@ function buildAutoReplyEmail(
         </td>
       </tr>
     </table>
-
     <div style="margin-top:32px;padding-top:24px;border-top:1px solid #F0EBE3;">
       <p style="margin:0;font-size:15px;color:#2D2A26;font-weight:600;">Anastasia Kolesnik</p>
       <p style="margin:4px 0 0;font-size:14px;color:#8B7355;">FormaInk · ${role}</p>
@@ -303,7 +289,7 @@ function buildAutoReplyEmail(
 </body></html>`;
 }
 
-// ─── MAIN HANDLER ───────────────────────────────────────────────────────────
+// ─── MAIN HANDLER ────────────────────────────────────────────────────────────
 export async function POST(request: NextRequest) {
   const ip = request.headers.get("x-forwarded-for")?.split(",")[0] || "unknown";
 
@@ -313,9 +299,10 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json();
-    const { name, email, projectType, message, honeypot, locale } = body;
+    const { name, email, projectType, message, budget, honeypot, locale } =
+      body;
 
-    // Step 2: Honeypot
+    // Honeypot
     if (honeypot) {
       return NextResponse.json({ success: true });
     }
@@ -338,7 +325,7 @@ export async function POST(request: NextRequest) {
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
     const NOTIFICATION_EMAIL =
-      process.env.NOTIFICATION_EMAIL || "trencinreklama@gmail.com";
+      process.env.CONTACT_EMAIL || "akolesnykl989@gmail.com";
 
     if (!RESEND_API_KEY) {
       return NextResponse.json(
@@ -347,7 +334,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Generate AI reply using RAG
+    // Generate AI reply
     let aiReply = "";
     if (OPENAI_API_KEY) {
       aiReply = await generateAIReply(
@@ -359,7 +346,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Notification to Anastasia
+    // ── Notification email to Anastasia ──────────────────────────────────
     const notifRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -376,6 +363,7 @@ export async function POST(request: NextRequest) {
           email,
           projectType,
           message,
+          budget,
           safeLocale,
         ),
       }),
@@ -389,7 +377,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Auto-reply to client
+    // ── Telegram notification ─────────────────────────────────────────────
+    await sendTelegramMessage(
+      formatFormNotification({
+        name,
+        email,
+        serviceType: projectType,
+        message,
+        budget,
+        locale: safeLocale,
+      }),
+    );
+
+    // ── Auto-reply to client ──────────────────────────────────────────────
     if (aiReply) {
       await fetch("https://api.resend.com/emails", {
         method: "POST",
@@ -404,6 +404,10 @@ export async function POST(request: NextRequest) {
           html: buildAutoReplyEmail(name, projectType, safeLocale, aiReply),
         }),
       });
+
+      await sendTelegramMessage(
+        formatAutoReplyNotification({ name, email, aiReply }),
+      );
     }
 
     return NextResponse.json({ success: true });
