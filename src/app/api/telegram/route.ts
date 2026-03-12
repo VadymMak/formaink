@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { collectAndFormatSEOReport } from "@/lib/seo-stats";
 import { sendTelegramMessage } from "@/lib/telegram";
-
+// This route serves as the Telegram bot webhook endpoint and also handles the /fi command for on-demand SEO reports.
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
